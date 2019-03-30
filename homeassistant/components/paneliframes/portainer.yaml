@@ -1,0 +1,5 @@
+# https://www.portainer.io/
+
+portainer:
+  title: 'Portainer'
+  url: !secret services_portainer_url

@@ -1,0 +1,5 @@
+title: Hochob
+
+views:
+
+  - !include lovelace/home.yaml

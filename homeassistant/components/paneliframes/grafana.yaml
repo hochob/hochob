@@ -1,0 +1,5 @@
+# https://grafana.com/
+
+grafana:
+  title: 'Grafana'
+  url: !secret services_grafana_url

@@ -1,0 +1,9 @@
+cameras:
+  view: true
+  icon: mdi:cctv
+  name: Cameras
+  entities:
+    - camera.ffmpeg_camera
+    - camera.ffmpeg_raspberrypi
+    - camera.mjpeg_camera
+    - camera.mjpeg_raspberrypi

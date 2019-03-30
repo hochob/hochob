@@ -1,0 +1,130 @@
+version: '3'
+services:
+
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: hochob-mosquitto
+    restart: on-failure
+    environment:
+      - TZ=America/Mexico_City
+    network_mode: host
+    ports:
+      - 1883:1883
+    user: "1000:1000"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - hochob-mosquitto-storage:/mosquitto/config:ro
+      - hochob-mosquitto-storage:/mosquitto/data:rw
+      - hochob-mosquitto-storage:/mosquitto/log:rw
+
+  glances:
+    image: docker.io/nicolargo/glances
+    container_name: hochob-glances
+    restart: on-failure
+    pid: host
+    environment:
+      - TZ=America/Mexico_City
+      - "GLANCES_OPT=-w"
+    network_mode: host
+    ports:
+      - 61208-61208
+      - 61209-61209
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  homeassistant:
+    image: homeassistant/home-assistant
+    container_name: hochob-homeassistant
+    restart: on-failure
+    depends_on:
+      - "influxdb"
+      - "mosquitto"
+      - "glances"
+    environment:
+      - TZ=America/Mexico_City
+    network_mode: host
+    ports:
+      - 8123:8123
+    devices:
+      - /dev/urandom:/dev/urandom
+    volumes:
+      - ./homeassistant:/config
+      - /etc/localtime:/etc/localtime:ro
+
+  influxdb:
+    image: influxdb
+    container_name: hochob-influxdb
+    restart: on-failure
+    environment:
+      - TZ=America/Mexico_City
+      - INFLUXDB_ADMIN_ENABLED='true'
+      - INFLUXDB_DB="home_assistant"
+    network_mode: host
+    ports:
+      - 8083:8083
+      - 8086:8086
+    volumes:
+      - hochob-influxdb-storage:/var/lib/influxdb
+
+  grafana:
+    image: grafana/grafana
+    container_name: hochob-grafana
+    restart: on-failure
+    depends_on:
+      - "influxdb"
+    environment:
+      - TZ=America/Mexico_City
+    network_mode: host
+    ports:
+      - 3000:3000
+    volumes:
+      - hochob-grafana-storage:/var/lib/grafana
+
+  portainer:
+    image: portainer/portainer
+    container_name: hochob-portainer
+    restart: on-failure
+    environment:
+      - TZ=America/Mexico_City
+    network_mode: host
+    ports:
+      - 9000:9000
+    volumes:
+      - hochob-portainer-storage:/data:rw
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  nodered:
+    image: nodered/node-red-docker:v8
+    container_name: hochob-nodered
+    restart: on-failure
+    environment:
+      - TZ=America/Mexico_City
+    network_mode: host
+    ports:
+      - 1880:1880
+    depends_on:
+      - "homeassistant"
+    user: root
+    volumes:
+      - hochob-nodered-storage:/data
+      - /etc/localtime:/etc/localtime:ro
+
+  plex:
+    image: plexinc/pms-docker
+    container_name: hochob-plex
+    restart: on-failure
+    environment:
+      - TZ=America/Mexico_City
+      - PLEX_CLAIM=<claimToken>
+    network_mode: host
+    volumes:
+      - ./config/plex/database:/config
+      - ./config/plex/transcode:/transcode
+      - ./media/:/data
+
+volumes:
+  hochob-mosquitto-storage:
+  hochob-influxdb-storage:
+  hochob-grafana-storage:
+  hochob-portainer-storage:
+  hochob-nodered-storage:

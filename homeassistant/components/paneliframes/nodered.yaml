@@ -1,0 +1,5 @@
+# https://nodered.org/
+
+nodered:
+  title: 'Node-RED'
+  url: !secret services_nodered_url

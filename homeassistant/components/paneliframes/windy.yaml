@@ -1,0 +1,5 @@
+# https://windy.com/
+
+windy:
+  title: 'Windy'
+  url: !secret services_windy_url 

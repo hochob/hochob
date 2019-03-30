@@ -1,0 +1,5 @@
+# https://www.home-assistant.io/components/camera.ffmpeg/.
+
+platform: ffmpeg
+name: ffmpeg camera
+input: !secret ffmpeg_camera

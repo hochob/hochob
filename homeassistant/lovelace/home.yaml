@@ -1,0 +1,9 @@
+title: Home
+icon: mdi:home-heart
+path: home
+cards:
+
+  - type: markdown
+    title: Welcome to Hochob!
+    content: >
+      Visitors Center
