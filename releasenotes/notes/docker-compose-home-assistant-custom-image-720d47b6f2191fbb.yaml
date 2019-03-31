@@ -1,0 +1,5 @@
+---
+features:
+  - |
+    Custom image for Home Assistant required to install specific packages
+    and enable services and applications.

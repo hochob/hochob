@@ -33,8 +33,12 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
 
   homeassistant:
+    build:
+      context: ./config/homeassistant/
+      dockerfile: Dockerfile.homeassistant
     image: homeassistant/home-assistant
     container_name: hochob-homeassistant
+    privileged: true
     restart: on-failure
     depends_on:
       - "influxdb"
@@ -42,14 +46,18 @@ services:
       - "glances"
     environment:
       - TZ=America/Mexico_City
+      - DISPLAY=:0
     network_mode: host
     ports:
       - 8123:8123
     devices:
       - /dev/urandom:/dev/urandom
+      - /dev
     volumes:
       - ./homeassistant:/config
       - /etc/localtime:/etc/localtime:ro
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
 
   influxdb:
     image: influxdb
