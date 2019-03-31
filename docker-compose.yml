@@ -55,6 +55,7 @@ services:
       - /dev
     volumes:
       - ./homeassistant:/config
+      - ./services:/services
       - /etc/localtime:/etc/localtime:ro
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME/.Xauthority:/root/.Xauthority:rw

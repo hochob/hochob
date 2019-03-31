@@ -1,0 +1,5 @@
+---
+features:
+  - |
+    A service performs a specific operation, at the the higher level
+    architecture, it is a component of an application.
