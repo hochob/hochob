@@ -3,3 +3,4 @@ title: Hochob
 views:
 
   - !include lovelace/home.yaml
+  - !include lovelace/techie.yaml

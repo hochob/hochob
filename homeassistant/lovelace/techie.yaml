@@ -1,0 +1,11 @@
+title: Techie
+icon: mdi:account-heart
+path: techie
+id: Techie
+cards:
+
+  - type: picture
+    image: /local/media/DiaDeMuertos/Image/Calaverita.jpg
+    hold_action:
+      action: call-service
+      service: shell_command.spacex
