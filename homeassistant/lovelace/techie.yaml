@@ -9,3 +9,9 @@ cards:
     hold_action:
       action: call-service
       service: shell_command.spacex
+
+  - type: picture
+    image: /local/media/DiaDeMuertos/Image/Calaverita.jpg
+    tap_action:
+      action: call-service
+      service: shell_command.google
