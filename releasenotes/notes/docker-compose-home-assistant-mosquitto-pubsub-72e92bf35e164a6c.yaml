@@ -1,0 +1,5 @@
+---
+features:
+  - |
+    Mosquitto Pub/Sub requirement through "mosquitto-clients" package
+    installation.
