@@ -1,0 +1,4 @@
+---
+features:
+  - |
+    Killall requirement through "psmisc" package installation.
