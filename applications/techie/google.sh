@@ -16,4 +16,6 @@
 # Main
 # =============================================================================
 
+. /services/main.sh
+
 /services/protocol/mosquitto_pub.sh 'hochob/status' '1'

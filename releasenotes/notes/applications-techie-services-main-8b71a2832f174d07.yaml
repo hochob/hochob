@@ -1,0 +1,4 @@
+---
+features:
+  - |
+    Standardize the call of services/main.sh for applications.

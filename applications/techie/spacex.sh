@@ -16,6 +16,6 @@
 # Main
 # =============================================================================
 
-source /services/main.sh
+. /services/main.sh
 
 /services/image/eog.sh /config/www/media/DiaDeMuertos/Image/Calaverita.jpg &
