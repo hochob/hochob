@@ -1,0 +1,13 @@
+title: Amikoo
+icon: mdi:robot
+path: amikoo
+id: Amikoo
+cards:
+
+  - type: entities
+    title: Nervous System
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Voice
+      - script.coji

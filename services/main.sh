@@ -2,6 +2,7 @@
 
 # Services
 
+export PATH=$PATH:/services/amikoo/
 export PATH=$PATH:/services/image/
 export PATH=$PATH:/services/protocol/
 
