@@ -11,3 +11,4 @@ cards:
       - type: section
         label: Voice
       - script.coji
+      - script.sphero

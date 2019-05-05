@@ -1,3 +1,7 @@
 coji:
   sequence:
     service: shell_command.coji
+
+sphero:
+  sequence:
+    service: shell_command.sphero
