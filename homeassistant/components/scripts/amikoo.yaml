@@ -1,3 +1,67 @@
+# Services Amikoo Musculoskeletal System
+
+lupeheadleft:
+  sequence:
+    service: shell_command.lupeheadleft
+
+lupeheadright:
+  sequence:
+    service: shell_command.lupeheadright
+
+lupearmrightup:
+  sequence:
+    service: shell_command.lupearmrightup
+
+lupearmrightdown:
+  sequence:
+    service: shell_command.lupearmrightdown
+
+lupearmrightfold:
+  sequence:
+    service: shell_command.lupearmrightfold
+
+lupearmrightunfold:
+  sequence:
+    service: shell_command.lupearmrightunfold
+
+lupearmleftup:
+  sequence:
+    service: shell_command.lupearmleftup
+
+lupearmleftdown:
+  sequence:
+    service: shell_command.lupearmleftdown
+
+lupearmleftfold:
+  sequence:
+    service: shell_command.lupearmleftfold
+
+lupearmleftunfold:
+  sequence:
+    service: shell_command.lupearmleftunfold
+
+lupelegsmoveright:
+  sequence:
+    service: shell_command.lupelegsmoveright
+
+lupelegsmoveleft:
+  sequence:
+    service: shell_command.lupelegsmoveleft
+
+lupelegsmoveforward:
+  sequence:
+    service: shell_command.lupelegsmoveforward
+
+lupelegsmovebackward:
+  sequence:
+    service: shell_command.lupelegsmovebackward
+
+lupelegsmovestop:
+  sequence:
+    service: shell_command.lupelegsmovestop
+
+# Applications Amikoo
+
 coji:
   sequence:
     service: shell_command.coji

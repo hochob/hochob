@@ -1,2 +1,25 @@
+# Services Amikoo Musculoskeletal System
+
+lupeheadleft: /services/amikoo/amikoomovement.sh 'lupe' 'headleft' 'Lupe Head Left'
+lupeheadright: /services/amikoo/amikoomovement.sh 'lupe' 'headright' 'Lupe Head Right'
+
+lupearmrightup: /services/amikoo/amikoomovement.sh 'lupe' 'rightup' 'Lupe Arm Right Up'
+lupearmrightdown: /services/amikoo/amikoomovement.sh 'lupe' 'rightdown' 'Lupe Arm Right Down'
+lupearmrightfold: /services/amikoo/amikoomovement.sh 'lupe' 'rightfold' 'Lupe Arm Right Fold'
+lupearmrightunfold: /services/amikoo/amikoomovement.sh 'lupe' 'rightunfold' 'Lupe Arm Right Unfold'
+
+lupearmleftup: /services/amikoo/amikoomovement.sh 'lupe' 'leftup' 'Lupe Arm Left Up'
+lupearmleftdown: /services/amikoo/amikoomovement.sh 'lupe' 'leftdown' 'Lupe Arm Left Down'
+lupearmleftfold: /services/amikoo/amikoomovement.sh 'lupe' 'leftfold' 'Lupe Arm Left Fold'
+lupearmleftunfold: /services/amikoo/amikoomovement.sh 'lupe' 'leftunfold' 'Lupe Arm Left Unfold'
+
+lupelegsmoveright: /services/amikoo/amikoomovement.sh 'lupe' 'moveright' 'Lupe Legs Move Right'
+lupelegsmoveleft: /services/amikoo/amikoomovement.sh 'lupe' 'moveleft' 'Lupe Legs Move Left'
+lupelegsmoveforward: /services/amikoo/amikoomovement.sh 'lupe' 'moveforward' 'Lupe Legs Move Forward'
+lupelegsmovebackward: /services/amikoo/amikoomovement.sh 'lupe' 'movebackward' 'Lupe Legs Move Backward'
+lupelegsmovestop: /services/amikoo/amikoomovement.sh 'lupe' 'movestop' 'Lupe Legs Stop'
+
+# Applications Amikoo
+
 coji: /applications/amikoo/coji.sh
 sphero: /applications/amikoo/sphero.sh

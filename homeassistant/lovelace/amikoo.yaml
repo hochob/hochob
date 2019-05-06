@@ -5,10 +5,135 @@ id: Amikoo
 cards:
 
   - type: entities
-    title: Nervous System
+    title: Lupe Nervous System
     show_header_toggle: false
     entities:
       - type: section
         label: Voice
       - script.coji
       - script.sphero
+
+  - type: picture-elements
+    title: Lupe Musculoskeletal System
+    image: /local/media/Amikoo/Image/AmikooEntrance.jpg
+    elements:
+      - type: service-button
+        title: Head Left
+        style:
+          top: 5%
+          left: 30%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupeheadleft
+      - type: service-button
+        title: Head Right
+        style:
+          top: 5%
+          left: 70%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupeheadright
+      - type: service-button
+        title: Arm Left Up
+        style:
+          top: 20%
+          left: 30%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupearmleftup
+      - type: service-button
+        title: Arm Left Down
+        style:
+          top: 30%
+          left: 30%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupearmleftdown
+      - type: service-button
+        title: Arm Left Fold
+        style:
+          top: 45%
+          left: 30%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupearmleftfold
+      - type: service-button
+        title: Arm Left Unfold
+        style:
+          top: 55%
+          left: 30%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupearmleftunfold
+      - type: service-button
+        title: Arm Right Up
+        style:
+          top: 20%
+          left: 70%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupearmrightup
+      - type: service-button
+        title: Arm Right Down
+        style:
+          top: 30%
+          left: 70%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupearmrightdown
+      - type: service-button
+        title: Arm Right Fold
+        style:
+          top: 45%
+          left: 70%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupearmrightfold
+      - type: service-button
+        title: Arm Right Unfold
+        style:
+          top: 55%
+          left: 70%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupearmrightunfold
+      - type: service-button
+        title: Legs Move Backward
+        style:
+          top: 70%
+          left: 50%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupelegsmovebackward
+      - type: service-button
+        title: Legs Move Forward
+        style:
+          top: 90%
+          left: 50%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupelegsmoveforward
+      - type: service-button
+        title: Legs Move Right
+        style:
+          top: 80%
+          left: 20%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupelegsmoveright
+      - type: service-button
+        title: Legs Move Left
+        style:
+          top: 80%
+          left: 80%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupelegsmoveleft
+      - type: service-button
+        title: Stop
+        style:
+          top: 80%
+          left: 50%
+        service: script.turn_on
+        service_data:
+          entity_id: script.lupelegsmovestop
