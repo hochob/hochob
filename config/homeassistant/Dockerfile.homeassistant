@@ -9,5 +9,6 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     eog \
     psmisc \
-    mosquitto-clients && \
+    mosquitto-clients \
+    alsa-utils && \
     rm -rf /var/lib/apt/lists/*
