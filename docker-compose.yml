@@ -53,6 +53,7 @@ services:
     devices:
       - /dev/urandom:/dev/urandom
       - /dev
+      - /dev/snd
     volumes:
       - ./homeassistant:/config
       - ./services:/services
