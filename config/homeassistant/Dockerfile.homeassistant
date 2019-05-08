@@ -12,3 +12,5 @@ RUN apt-get update && \
     mosquitto-clients \
     alsa-utils && \
     rm -rf /var/lib/apt/lists/*
+
+ADD asoundrc /root/.asoundrc
