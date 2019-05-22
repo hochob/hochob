@@ -46,7 +46,7 @@ services:
       - "glances"
     environment:
       - TZ=America/Mexico_City
-      - DISPLAY=${DISPLAY}
+      - DISPLAY=:0
       - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
       - XAUTHORITY=${XAUTH}
       - XAUTH=${XAUTH}
