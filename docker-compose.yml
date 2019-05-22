@@ -47,6 +47,7 @@ services:
     environment:
       - TZ=America/Mexico_City
       - DISPLAY=:0
+      - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
     network_mode: host
     ports:
       - 8123:8123
@@ -54,6 +55,7 @@ services:
       - /dev/urandom:/dev/urandom
       - /dev
       - /dev/snd
+      - /proc
     volumes:
       - ./homeassistant:/config
       - ./services:/services
@@ -62,6 +64,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME/.Xauthority:/root/.Xauthority:rw
+      - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native
+      - ~/.config/pulse/cookie:/root/.config/pulse/cookie
 
   influxdb:
     image: influxdb

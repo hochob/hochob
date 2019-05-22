@@ -10,7 +10,12 @@ RUN apt-get update && \
     eog \
     psmisc \
     mosquitto-clients \
-    alsa-utils && \
+    alsa-utils \
+    libpulse0 \
+    pulseaudio \
+    vim && \
     rm -rf /var/lib/apt/lists/*
 
 ADD asoundrc /root/.asoundrc
+
+RUN usermod -a -G `getent group audio | cut -d: -f3` root
