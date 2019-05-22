@@ -18,10 +18,12 @@ RUN apt-get update && \
     vlc \
     mplayer \
     libgl1-mesa-glx \
-    libgl1-mesa-dri && \
+    libgl1-mesa-dri \
+    mpg123 && \
     rm -rf /var/lib/apt/lists/*
 
 ADD asoundrc /root/.asoundrc
 
-RUN usermod -a -G `getent group audio | cut -d: -f3` root
-RUN usermod -a -G `getent group video | cut -d: -f3` root
+RUN usermod -a -G `getent group audio | cut -d: -f3` root && \
+    usermod -a -G `getent group video | cut -d: -f3` root && \
+    sed -i 's/geteuid/getppid/' /usr/bin/vlc
