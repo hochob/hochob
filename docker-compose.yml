@@ -46,8 +46,15 @@ services:
       - "glances"
     environment:
       - TZ=America/Mexico_City
-      - DISPLAY=:0
+      - DISPLAY=${DISPLAY}
       - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
+      - XAUTHORITY=${XAUTH}
+      - XAUTH=${XAUTH}
+      - QT_X11_NO_MITSHM=1
+    cap_add:
+      - ALL
+    pid: "host"
+    ipc: "host"
     network_mode: host
     ports:
       - 8123:8123
@@ -56,6 +63,8 @@ services:
       - /dev
       - /dev/snd
       - /proc
+      - /dev/dri/card1:/dev/dri/card0
+      - /dev/dri/renderD129:/dev/dri/renderD128
     volumes:
       - ./homeassistant:/config
       - ./services:/services

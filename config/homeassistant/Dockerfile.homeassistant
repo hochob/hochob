@@ -14,9 +14,14 @@ RUN apt-get update && \
     libpulse0 \
     pulseaudio \
     vim \
-    espeak && \
+    espeak \
+    vlc \
+    mplayer \
+    libgl1-mesa-glx \
+    libgl1-mesa-dri && \
     rm -rf /var/lib/apt/lists/*
 
 ADD asoundrc /root/.asoundrc
 
 RUN usermod -a -G `getent group audio | cut -d: -f3` root
+RUN usermod -a -G `getent group video | cut -d: -f3` root
