@@ -66,6 +66,10 @@ coji:
   sequence:
     service: shell_command.coji
 
+jibo:
+  sequence:
+    service: shell_command.jibo
+
 sphero:
   sequence:
     service: shell_command.sphero

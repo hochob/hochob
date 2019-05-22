@@ -137,3 +137,10 @@ cards:
         service: script.turn_on
         service_data:
           entity_id: script.lupelegsmovestop
+
+  - type: picture
+    title: Lupe @ Moon
+    image: /local/media/Amikoo/Image/LupeBrotherToMoon.png
+    hold_action:
+      action: call-service
+      service: shell_command.jibo
