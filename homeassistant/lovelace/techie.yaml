@@ -5,13 +5,13 @@ id: Techie
 cards:
 
   - type: picture
-    image: /local/media/DiaDeMuertos/Image/Calaverita.jpg
+    image: /local/media/Amikoo/Image/LupeBienvenidaIntel.png
     hold_action:
       action: call-service
       service: shell_command.spacex
 
   - type: picture
-    image: /local/media/DiaDeMuertos/Image/Calaverita.jpg
+    image: /local/media/Amikoo/Image/AmikooOutsideIntelLobby.jpg
     tap_action:
       action: call-service
       service: shell_command.google
