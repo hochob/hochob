@@ -13,7 +13,8 @@ RUN apt-get update && \
     alsa-utils \
     libpulse0 \
     pulseaudio \
-    vim && \
+    vim \
+    espeak && \
     rm -rf /var/lib/apt/lists/*
 
 ADD asoundrc /root/.asoundrc
