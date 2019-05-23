@@ -13,10 +13,17 @@ export AMIKOO=amikoo
 
 # Services Amikoo Nervous System Voice
 
-AMIKOO_VOICE=$AMIKOO/sound/speechsynthetizer
-AMIKOO_VOICE_ENGINE=$AMIKOO_VOICE/engine
-AMIKOO_VOICE_ENGLISH=$AMIKOO_VOICE/say
-AMIKOO_VOICE_ESPANOL=$AMIKOO_VOICE/decir
+export AMIKOO_VOICE=$AMIKOO/sound/speechsynthetizer
+export AMIKOO_VOICE_ENGINE=$AMIKOO_VOICE/engine
+export AMIKOO_VOICE_ENGLISH=$AMIKOO_VOICE/say
+export AMIKOO_VOICE_ESPANOL=$AMIKOO_VOICE/decir
+
+# Services Amikoo Multimedia
+
+export AMIKOO_MULTIMEDIA=$AMIKOO/tradition
+export AMIKOO_MULTIMEDIA_AUDIO=$AMIKOO_MULTIMEDIA/sound
+export AMIKOO_MULTIMEDIA_IMAGE=$AMIKOO_MULTIMEDIA/image
+export AMIKOO_MULTIMEDIA_VIDEO=$AMIKOO_MULTIMEDIA/video
 
 # Services Protocol Mosquitto
 

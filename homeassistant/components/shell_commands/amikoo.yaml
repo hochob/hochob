@@ -23,4 +23,5 @@ lupelegsmovestop: /services/amikoo/amikoomovement.sh 'lupe' 'movestop' 'Lupe Leg
 
 coji: /applications/amikoo/coji.sh
 jibo: /applications/amikoo/jibo.sh
+meccanoid: /applications/amikoo/meccanoid.sh
 sphero: /applications/amikoo/sphero.sh

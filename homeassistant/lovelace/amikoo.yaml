@@ -143,4 +143,4 @@ cards:
     image: /local/media/Amikoo/Image/LupeBrotherToMoon.png
     hold_action:
       action: call-service
-      service: shell_command.jibo
+      service: shell_command.meccanoid

@@ -70,6 +70,10 @@ jibo:
   sequence:
     service: shell_command.jibo
 
+meccanoid:
+  sequence:
+    service: shell_command.meccanoid
+
 sphero:
   sequence:
     service: shell_command.sphero
