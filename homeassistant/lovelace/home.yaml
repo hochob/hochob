@@ -7,3 +7,11 @@ cards:
     title: Welcome to Hochob!
     content: >
       Visitors Center
+
+  - type: picture
+    title: Welcome!
+    image: /local/media/Intel/Image/BobSwanIntel.jpg
+    hold_action:
+      action: call-service
+      service: shell_command.ceo
+
