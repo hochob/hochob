@@ -4,14 +4,47 @@ path: home
 cards:
 
   - type: markdown
-    title: Welcome to Hochob!
+    title: Open MIND 2019
     content: >
-      Visitors Center
+      Un espacio de inspiración en donde convergen la innovación,
+      el diseño y las tendencias tecnológicas del futuro.
+
+  - type: picture-elements
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina01.png
+    elements:
+      - type: service-button
+        title: Hola...
+        style:
+          top: 50%
+          left: 65%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0101
+      - type: service-button
+        title: No...
+        style:
+          top: 60%
+          left: 65%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0102
+      - type: service-button
+        title: Bienvenidos
+        style:
+          top: 70%
+          left: 65%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0103
 
   - type: picture
-    title: Welcome!
-    image: /local/media/Intel/Image/BobSwanIntel.jpg
-    hold_action:
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina02.png
+    tap_action:
       action: call-service
-      service: shell_command.ceo
+      service: shell_command.openmind
 
+  - type: picture
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina03.png
+    tap_action:
+      action: call-service
+      service: shell_command.openmind
