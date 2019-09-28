@@ -14,6 +14,7 @@ RUN apk update && \
     alsa-lib \
     alsaconf \
     vlc \
-    espeak
+    espeak \
+    eog
 
 ADD asoundrc /root/.asoundrc
