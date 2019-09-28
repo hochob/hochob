@@ -37,11 +37,17 @@ cards:
         service_data:
           entity_id: script.robotina0103
 
-  - type: picture
+  - type: picture-elements
     image: /local/media/OpenMind/Image/OpenMind2019Robotina02.png
-    tap_action:
-      action: call-service
-      service: shell_command.openmind
+    elements:
+      - type: service-button
+        title: Retos
+        style:
+          top: 10%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0201
 
   - type: picture
     image: /local/media/OpenMind/Image/OpenMind2019Robotina03.png

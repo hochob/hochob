@@ -25,17 +25,30 @@ export ROBOTINA_COMMAND=$1
 case $ROBOTINA_COMMAND in
 
      0101)
-           /services/voice/voice.sh 'on' 'espeak' 'spanish' 'Hola, a todos! Como están?'
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'Hola, a todos! Como están?'
            ;;
 
      0102)
-           /services/voice/voice.sh 'on' 'espeak' 'spanish' 'No los escucho! Como están?'
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'No los escucho! Como están?'
            ;;
 
      0103)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
                                     'Bienvenidos a nuestra plática: \
-                                     Robotina ya está aquí: Inteligencia Artificial'
+                                     Robotina, es decir, su servidora! ya está aquí: \
+                                     Inteligencia Artificial'
+           ;;
+
+     0201)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'El cambio climático, biodiversidad, el agua, \
+                                     nutrición, los bosques, los océanos, población, \
+                                     ciudades, migración, agricultura, entre otros. \
+                                     Pero espera, ninguno de estos son de lo que hablaremos \
+                                     hoy, correcto?'
+
            ;;
 
      *)

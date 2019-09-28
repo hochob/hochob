@@ -7,3 +7,6 @@ robotina0102:
 robotina0103:
   sequence:
     service: shell_command.robotina0103
+robotina0201:
+  sequence:
+    service: shell_command.robotina0201
