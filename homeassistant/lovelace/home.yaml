@@ -15,24 +15,24 @@ cards:
       - type: service-button
         title: Hola...
         style:
-          top: 50%
-          left: 65%
+          top: 95%
+          left: 35%
         service: script.turn_on
         service_data:
           entity_id: script.robotina0101
       - type: service-button
         title: No...
         style:
-          top: 60%
-          left: 65%
+          top: 95%
+          left: 55%
         service: script.turn_on
         service_data:
           entity_id: script.robotina0102
       - type: service-button
         title: Bienvenidos
         style:
-          top: 70%
-          left: 65%
+          top: 95%
+          left: 80%
         service: script.turn_on
         service_data:
           entity_id: script.robotina0103
@@ -41,7 +41,7 @@ cards:
     image: /local/media/OpenMind/Image/OpenMind2019Robotina02.png
     elements:
       - type: service-button
-        title: Retos
+        title: Imagina
         style:
           top: 10%
           left: 10%
@@ -49,8 +49,70 @@ cards:
         service_data:
           entity_id: script.robotina0201
 
-  - type: picture
+  - type: picture-elements
     image: /local/media/OpenMind/Image/OpenMind2019Robotina03.png
-    tap_action:
-      action: call-service
-      service: shell_command.openmind
+    elements:
+      - type: service-button
+        title: Retos
+        style:
+          top: 10%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0301
+
+  - type: picture-elements
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina04.png
+    elements:
+      - type: service-button
+        title: 04
+        style:
+          top: 10%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0401
+
+  - type: picture-elements
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina05.png
+    elements:
+      - type: service-button
+        title: Deep Blue
+        style:
+          top: 5%
+          left: 50%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0501
+
+  - type: picture-elements
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina06.png
+    elements:
+      - type: service-button
+        title: AlphaGo
+        style:
+          top: 05%
+          left: 35%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0601
+      - type: service-button
+        title: AlphaZero
+        style:
+          top: 05%
+          left: 65%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0602
+
+  - type: picture-elements
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina10.png
+    elements:
+      - type: service-button
+        title: 10
+        style:
+          top: 10%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina1001
