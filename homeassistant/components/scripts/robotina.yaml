@@ -1,0 +1,9 @@
+robotina0101:
+  sequence:
+    service: shell_command.robotina0101
+robotina0102:
+  sequence:
+    service: shell_command.robotina0102
+robotina0103:
+  sequence:
+    service: shell_command.robotina0103
