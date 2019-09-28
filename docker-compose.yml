@@ -71,10 +71,10 @@ services:
       - ./applications:/applications:consistent
       - ./media:/config/www/media:consistent
       - /etc/localtime:/etc/localtime:ro
-      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /tmp/.X11-unix:/tmp/.X11-unix:consistent
       - $HOME/.Xauthority:/root/.Xauthority:rw
-      - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native
-      - ~/.config/pulse/cookie:/root/.config/pulse/cookie
+      - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native:consistent
+      - ~/.config/pulse/cookie:/root/.config/pulse/cookie:consistent
 
   influxdb:
     image: influxdb
