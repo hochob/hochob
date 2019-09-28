@@ -66,10 +66,10 @@ services:
       - /dev/dri/card1:/dev/dri/card0
       - /dev/dri/renderD129:/dev/dri/renderD128
     volumes:
-      - ./homeassistant:/config
-      - ./services:/services
-      - ./applications:/applications
-      - ./media:/config/www/media
+      - ./homeassistant:/config:consistent
+      - ./services:/services:consistent
+      - ./applications:/applications:consistent
+      - ./media:/config/www/media:consistent
       - /etc/localtime:/etc/localtime:ro
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME/.Xauthority:/root/.Xauthority:rw
