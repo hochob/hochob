@@ -1,2 +1,3 @@
-spacex: /applications/techie/spacex.sh
 google: /applications/techie/google.sh
+spacex: /applications/techie/spacex.sh
+toyota: /applications/techie/toyota.sh

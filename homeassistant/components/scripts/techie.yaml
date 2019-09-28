@@ -1,0 +1,5 @@
+# Services Musculoskeletal System
+
+toyota:
+  sequence:
+    service: shell_command.toyota
