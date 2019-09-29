@@ -32,7 +32,8 @@ if [ $# -eq 4 ]; then
     fi
 
     if [ "$LOCAL_PLAY" = "on" ]; then
-        aplay $SPEECH_FILE
+        #aplay $SPEECH_FILE
+        echo
     fi
 
 else

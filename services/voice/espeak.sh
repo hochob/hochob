@@ -46,13 +46,13 @@ then
 
     $ESPEAK_BINARY $ESPEAK_PLAY $ESPEAK_SPEECH_FILE $ESPEAK_LANGUAGE "$ESPEAK_INPUT" --stdout | aplay -D 'default'
 
-    $FFMPEG_BINARY -y -i $ESPEAK_SPEECH_FILE $ESPEAK_SPEECH_MP3_FILE
+    #$FFMPEG_BINARY -y -i $ESPEAK_SPEECH_FILE $ESPEAK_SPEECH_MP3_FILE
 
     cp $ESPEAK_SPEECH_FILE $SPEECH_FILE
     cp $ESPEAK_SPEECH_MP3_FILE $SPEECH_MP3_FILE
 
     killall -9 $ESPEAK_BINARY
-    killall -9 $FFMPEG_BINARY
+    #killall -9 $FFMPEG_BINARY
 
 else
     echo "Invalid number of arguments, see Documentation"
