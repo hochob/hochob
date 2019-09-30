@@ -51,7 +51,21 @@ case $ROBOTINA_COMMAND in
 
      0201)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'Imagina lo imposible porque el único límite es tu imaginación.'
+                                    'Imagina lo imposible.'
+           ;;
+
+     0202)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'Que es la inteligencia?'
+           ;;
+
+     0203)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'La inteligencia artificial tiene el potencial \
+                                     de ayudar a resolver todos los problemas más \
+                                     difíciles del presente y del futuro. Tendrán \
+                                     ustedes, los seres humanos, la inteligencia \
+                                     para crear esas soluciones como sociedad?'
            ;;
 
      0301)
@@ -66,7 +80,8 @@ case $ROBOTINA_COMMAND in
 
      0401)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    '4'
+                                    'De acuerdo al  INEGI para el año 2050, una cuarta parte \
+                                     de la población de México serán adultos mayores.'
 
            ;;
 
@@ -99,7 +114,16 @@ case $ROBOTINA_COMMAND in
 
            ;;
 
+     2101)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'Lo que quiero que esta compañía nunca olvide, \
+                                     porque tenemos el tamaño de hoy, muchas compañías, \
+                                     aprendí por qué fallan, se olvidan de los sueños. \
+                                     Son los sueños los que nos mantienen trabajando duro. \
+                                     Son sueños que nos mantienen sin miedo a los errores, \
+                                     a los contratiempos.'
 
+           ;;
 
      *)
            echo "Sorry, I don't understand"

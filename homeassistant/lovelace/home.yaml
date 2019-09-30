@@ -43,11 +43,28 @@ cards:
       - type: service-button
         title: Imagina
         style:
-          top: 10%
-          left: 10%
+          top: 25%
+          left: 20%
         service: script.turn_on
         service_data:
           entity_id: script.robotina0201
+      - type: service-button
+        title: Aprende
+        style:
+          top: 25%
+          left: 50%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0202
+      - type: service-button
+        title: Colabora
+        style:
+          top: 25%
+          left: 80%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0203
+
 
   - type: picture-elements
     image: /local/media/OpenMind/Image/OpenMind2019Robotina03.png
@@ -79,7 +96,7 @@ cards:
       - type: service-button
         title: Deep Blue
         style:
-          top: 5%
+          top: 7%
           left: 50%
         service: script.turn_on
         service_data:
@@ -91,7 +108,7 @@ cards:
       - type: service-button
         title: AlphaGo
         style:
-          top: 05%
+          top: 7%
           left: 35%
         service: script.turn_on
         service_data:
@@ -99,7 +116,7 @@ cards:
       - type: service-button
         title: AlphaZero
         style:
-          top: 05%
+          top: 7%
           left: 65%
         service: script.turn_on
         service_data:
@@ -116,3 +133,16 @@ cards:
         service: script.turn_on
         service_data:
           entity_id: script.robotina1001
+
+  - type: picture-elements
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina21.png
+    elements:
+      - type: service-button
+        title: Soñemos
+        style:
+          top: 45%
+          left: 66%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina2101
+
