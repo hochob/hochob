@@ -51,7 +51,7 @@ case $ROBOTINA_COMMAND in
 
      0201)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'Imagina lo imposible.'
+                                    'Imagina lo imposible. Cual es el limite?'
            ;;
 
      0202)
@@ -62,7 +62,7 @@ case $ROBOTINA_COMMAND in
      0203)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
                                     'La inteligencia artificial tiene el potencial \
-                                     de ayudar a resolver todos los problemas más \
+                                     de ayudar a resolver todos los retos más \
                                      difíciles del presente y del futuro. Tendrán \
                                      ustedes, los seres humanos, la inteligencia \
                                      para crear esas soluciones como sociedad?'
@@ -81,8 +81,13 @@ case $ROBOTINA_COMMAND in
      0401)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
                                     'De acuerdo al  INEGI para el año 2050, una cuarta parte \
-                                     de la población de México serán adultos mayores.'
+                                     de la población de México serán adultos mayores. Cuales
+                                     son los principales problemas a los que nos enfrentaremos?'
+           ;;
 
+     0402)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'Malnutrición, enfermedades, depresión, discriminación'
            ;;
 
      0501)
@@ -108,18 +113,43 @@ case $ROBOTINA_COMMAND in
                                      de solo 4 horas de autoaprendizaje.'
            ;;
 
-     1001)
+     1301)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    '10'
+                                    'Esta aplicación está diseñada para detectar los humanos \
+                                     presentes en un área seleccionada predefinida. Si la gente \
+                                     ingresa al área de reunión marcada, levanta la alerta y \
+                                     envía un mensaje a través de mqtt. Su objetivo es demostrar \
+                                     cómo usar CV para mejorar la seguridad de la línea de montaje \
+                                     para operadores humanos y trabajadores de fábricas.'
+
+           ;;
+
+     1302)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'Esta aplicación está diseñada para un sistema de cámara montado \
+                                     en un estante que cuenta la cantidad de transeúntes y la \
+                                     cantidad de personas que miran hacia la pantalla. Su objetivo \
+                                     es proporcionar estadísticas de marketing del mundo real para la \
+                                     publicidad en el estante de la tienda.'
+
+           ;;
+
+     1501)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'Esta aplicación está diseñada para un sistema de cámara minorista \
+                                     que cuenta la cantidad de transeúntes que miran hacia la pantalla y \
+                                     capturan su estado de ánimo, que se clasifica en 5 emociones: \
+                                     neutral, feliz, triste, sorprendido, enojado. Si la emoción no se \
+                                     puede determinar con un nivel de confianza mayor que el valor \
+                                     configurado, la emoción se marca como desconocida. Su objetivo \
+                                     es proporcionar estadísticas de marketing del mundo real para el \
+                                     análisis del estado de ánimo de compras en la tienda.'
 
            ;;
 
      2101)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'Lo que quiero que esta compañía nunca olvide, \
-                                     porque tenemos el tamaño de hoy, muchas compañías, \
-                                     aprendí por qué fallan, se olvidan de los sueños. \
-                                     Son los sueños los que nos mantienen trabajando duro. \
+                                    'Son los sueños, los que nos mantienen trabajando duro. \
                                      Son sueños que nos mantienen sin miedo a los errores, \
                                      a los contratiempos.'
 

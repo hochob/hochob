@@ -82,13 +82,21 @@ cards:
     image: /local/media/OpenMind/Image/OpenMind2019Robotina04.png
     elements:
       - type: service-button
-        title: 04
+        title: INEGI
         style:
           top: 10%
           left: 10%
         service: script.turn_on
         service_data:
           entity_id: script.robotina0401
+      - type: service-button
+        title: Problemas
+        style:
+          top: 10%
+          left: 60%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina0402
 
   - type: picture-elements
     image: /local/media/OpenMind/Image/OpenMind2019Robotina05.png
@@ -122,17 +130,64 @@ cards:
         service_data:
           entity_id: script.robotina0602
 
-  - type: picture-elements
+  - type: picture
     image: /local/media/OpenMind/Image/OpenMind2019Robotina10.png
+
+  - type: picture
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina11.png
+
+  - type: picture
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina12.png
+
+  - type: picture-elements
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina13.png
     elements:
       - type: service-button
-        title: 10
+        title: Restricted
         style:
-          top: 10%
-          left: 10%
+          top: 45%
+          left: 40%
         service: script.turn_on
         service_data:
-          entity_id: script.robotina1001
+          entity_id: script.robotina1301
+      - type: service-button
+        title: Shopper
+        style:
+          top: 45%
+          left: 60%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina1302
+
+  - type: picture
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina14.png
+
+  - type: picture-elements
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina15.png
+    elements:
+      - type: service-button
+        title: Shopper
+        style:
+          top: 45%
+          left: 50%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina1501
+
+  - type: picture
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina16.png
+
+  - type: picture
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina17.png
+
+  - type: picture
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina18.png
+
+  - type: picture
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina19.png
+
+  - type: picture
+    image: /local/media/OpenMind/Image/OpenMind2019Robotina20.png
 
   - type: picture-elements
     image: /local/media/OpenMind/Image/OpenMind2019Robotina21.png
