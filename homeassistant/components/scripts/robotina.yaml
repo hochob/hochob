@@ -34,6 +34,21 @@ robotina0601:
 robotina0602:
   sequence:
     service: shell_command.robotina0602
+robotina1101:
+  sequence:
+    service: shell_command.robotina1101
+robotina1102:
+  sequence:
+    service: shell_command.robotina1102
+robotina1103:
+  sequence:
+    service: shell_command.robotina1103
+robotina1104:
+  sequence:
+    service: shell_command.robotina1104
+robotina1105:
+  sequence:
+    service: shell_command.robotina1105
 robotina1301:
   sequence:
     service: shell_command.robotina1301

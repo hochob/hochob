@@ -133,8 +133,50 @@ cards:
   - type: picture
     image: /local/media/OpenMind/Image/OpenMind2019Robotina10.png
 
-  - type: picture
+  - type: picture-elements
     image: /local/media/OpenMind/Image/OpenMind2019Robotina11.png
+    elements:
+      - type: service-button
+        title: 01
+        style:
+          top: 43%
+          left: 30%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina1101
+      - type: service-button
+        title: 02
+        style:
+          top: 43%
+          left: 40%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina1102
+      - type: service-button
+        title: 03
+        style:
+          top: 43%
+          left: 50%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina1103
+      - type: service-button
+        title: 04
+        style:
+          top: 43%
+          left: 60%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina1104
+      - type: service-button
+        title: 05
+        style:
+          top: 43%
+          left: 70%
+        service: script.turn_on
+        service_data:
+          entity_id: script.robotina1105
+
 
   - type: picture
     image: /local/media/OpenMind/Image/OpenMind2019Robotina12.png

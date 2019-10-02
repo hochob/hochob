@@ -95,7 +95,6 @@ case $ROBOTINA_COMMAND in
                                     'Dip Blu, fue una supercomputadora desarrollada por IBM \
                                      para jugar al ajedrez. Fue la primera que venció a un \
                                      campeón del mundo vigente, Gary Kaspáróv'
-
            ;;
 
      0601)
@@ -113,6 +112,39 @@ case $ROBOTINA_COMMAND in
                                      de solo 4 horas de autoaprendizaje.'
            ;;
 
+     1101)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'Buenos dias! Son las 9 15, se espera un dia soleado, como dormiste?'
+           ;;
+
+     1102)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'Te veo triste. Del 1 al 10, siendo 1, mal y 10, super bien, \
+                                     cómo te sientes? recordando que ayer amaneciste en 5.'
+           ;;
+
+     1103)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'De acuerdo! Haré cita con el psicólogo próximo semana. \
+                                     No has tomado tu pastilla de las 9, y para el desayuno, tu \
+                                     nutriólogo recomendó para este mes un máximo de 1400 calorías \
+                                     diarias.'
+           ;;
+
+     1104)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'En lo que desayunas, me permites recordarte tus actividades \
+                                     del día de hoy?'
+           ;;
+
+     1105)
+           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
+                                    'A las 12 hay reunión en el templo, a las 3 de la tarde cita \
+                                     con el médico interno. Tu taxi está programado para pasar por \
+                                     ti 2:30. Tienes mensajes pendientes de tu familia, me permites \
+                                     leerlos?'
+           ;;
+
      1301)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
                                     'Esta aplicación está diseñada para detectar los humanos \
@@ -121,7 +153,6 @@ case $ROBOTINA_COMMAND in
                                      envía un mensaje a través de mqtt. Su objetivo es demostrar \
                                      cómo usar CV para mejorar la seguridad de la línea de montaje \
                                      para operadores humanos y trabajadores de fábricas.'
-
            ;;
 
      1302)
@@ -131,7 +162,6 @@ case $ROBOTINA_COMMAND in
                                      cantidad de personas que miran hacia la pantalla. Su objetivo \
                                      es proporcionar estadísticas de marketing del mundo real para la \
                                      publicidad en el estante de la tienda.'
-
            ;;
 
      1501)
@@ -144,7 +174,6 @@ case $ROBOTINA_COMMAND in
                                      configurado, la emoción se marca como desconocida. Su objetivo \
                                      es proporcionar estadísticas de marketing del mundo real para el \
                                      análisis del estado de ánimo de compras en la tienda.'
-
            ;;
 
      2101)
@@ -152,7 +181,6 @@ case $ROBOTINA_COMMAND in
                                     'Son los sueños, los que nos mantienen trabajando duro. \
                                      Son sueños que nos mantienen sin miedo a los errores, \
                                      a los contratiempos.'
-
            ;;
 
      *)
