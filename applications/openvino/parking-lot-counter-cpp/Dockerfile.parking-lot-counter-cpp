@@ -13,7 +13,8 @@ ENV DEBIAN_FRONTEND noninteractive
 WORKDIR /
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libssl-dev && \
+    libssl-dev \
+    git && \
     rm -rf /var/lib/apt/lists/*
 
 ADD --chown=1000:1000 main.sh /home/user/
@@ -39,8 +40,8 @@ RUN /bin/bash -c "source $OPENVINO_INSTALL/bin/setupvars.sh && \
 RUN /bin/bash -c "source $OPENVINO_INSTALL/bin/setupvars.sh"
 RUN echo "source $OPENVINO_INSTALL/bin/setupvars.sh" >> /home/user/.bashrc
 
-ARG DEVICE
-ENV DEVICE="${DEVICE}"
+ARG TARGET
+ENV TARGET="${TARGET}"
 
 ARG VIDEO
 ENV VIDEO="${VIDEO}"
@@ -49,4 +50,4 @@ ARG ENTRANCE
 ENV ENTRANCE=${ENTRANCE}
 
 ENTRYPOINT ["/home/user/main.sh"]
-CMD ["/home/user/main.sh", "${DEVICE}", ${VIDEO}, ${ENTRANCE}]
+CMD ["/home/user/main.sh", "${TARGET}", ${VIDEO}, ${ENTRANCE}]

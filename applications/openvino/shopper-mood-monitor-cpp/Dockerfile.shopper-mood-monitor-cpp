@@ -13,7 +13,8 @@ ENV DEBIAN_FRONTEND noninteractive
 WORKDIR /
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libssl-dev && \
+    libssl-dev \
+    git && \
     rm -rf /var/lib/apt/lists/*
 
 ADD --chown=1000:1000 main.sh /home/user/
@@ -43,5 +44,8 @@ RUN echo "source $OPENVINO_INSTALL/bin/setupvars.sh" >> /home/user/.bashrc
 ARG DEVICE
 ENV DEVICE="${DEVICE}"
 
+ARG TARGET
+ENV TARGET="${TARGET}"
+
 ENTRYPOINT ["/home/user/main.sh"]
-CMD ["/home/user/main.sh", "${DEVICE}"]
+CMD ["/home/user/main.sh", "${DEVICE}", "${TARGET}"]
