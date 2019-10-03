@@ -51,7 +51,7 @@ case $ROBOTINA_COMMAND in
 
      0201)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'Imagina lo imposible. Cual es el limite?'
+                                    'Imagina lo imposible. Cual es el límite?'
            ;;
 
      0202)
@@ -80,7 +80,7 @@ case $ROBOTINA_COMMAND in
 
      0401)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'De acuerdo al  INEGI para el año 2050, una cuarta parte \
+                                    'De acuerdo al INEGI para el año 2050, una cuarta parte \
                                      de la población de México serán adultos mayores. Cuales
                                      son los principales problemas a los que nos enfrentaremos?'
            ;;
@@ -114,21 +114,23 @@ case $ROBOTINA_COMMAND in
 
      1101)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'Buenos dias! Son las 9 15, se espera un dia soleado, como dormiste?'
+                                    'Buenos días. Son las 9 15, tendremos una mañana soleada, \
+                                     como dormiste?'
            ;;
 
      1102)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'Te veo triste. Del 1 al 10, siendo 1, mal y 10, super bien, \
-                                     cómo te sientes? recordando que ayer amaneciste en 5.'
+                                    'Te veo triste. Cómo te sientes hoy? recordando que ayer \
+                                     estabas preocupado.'
            ;;
 
      1103)
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'De acuerdo! Haré cita con el psicólogo próximo semana. \
+                                    'De acuerdo. Haré cita con el psicólogo próxima semana. \
                                      No has tomado tu pastilla de las 9, y para el desayuno, tu \
                                      nutriólogo recomendó para este mes un máximo de 1400 calorías \
-                                     diarias.'
+                                     diarias, te recomiendo dos claras de huevo, té de manzanilla, \
+                                     y un solo pan tostado con mermelada.'
            ;;
 
      1104)
@@ -160,7 +162,7 @@ case $ROBOTINA_COMMAND in
                                     'Esta aplicación está diseñada para un sistema de cámara montado \
                                      en un estante que cuenta la cantidad de transeúntes y la \
                                      cantidad de personas que miran hacia la pantalla. Su objetivo \
-                                     es proporcionar estadísticas de marketing del mundo real para la \
+                                     es proporcionar estadísticas de mercadotecnia del mundo real para la \
                                      publicidad en el estante de la tienda.'
            ;;
 
@@ -172,7 +174,7 @@ case $ROBOTINA_COMMAND in
                                      neutral, feliz, triste, sorprendido, enojado. Si la emoción no se \
                                      puede determinar con un nivel de confianza mayor que el valor \
                                      configurado, la emoción se marca como desconocida. Su objetivo \
-                                     es proporcionar estadísticas de marketing del mundo real para el \
+                                     es proporcionar estadísticas de mercadotecnia para el \
                                      análisis del estado de ánimo de compras en la tienda.'
            ;;
 

@@ -93,7 +93,7 @@ cards:
         title: Problemas
         style:
           top: 10%
-          left: 60%
+          left: 65%
         service: script.turn_on
         service_data:
           entity_id: script.robotina0402
@@ -140,7 +140,7 @@ cards:
         title: 01
         style:
           top: 43%
-          left: 30%
+          left: 10%
         service: script.turn_on
         service_data:
           entity_id: script.robotina1101
@@ -148,7 +148,7 @@ cards:
         title: 02
         style:
           top: 43%
-          left: 40%
+          left: 30%
         service: script.turn_on
         service_data:
           entity_id: script.robotina1102
@@ -164,7 +164,7 @@ cards:
         title: 04
         style:
           top: 43%
-          left: 60%
+          left: 70%
         service: script.turn_on
         service_data:
           entity_id: script.robotina1104
@@ -172,7 +172,7 @@ cards:
         title: 05
         style:
           top: 43%
-          left: 70%
+          left: 90%
         service: script.turn_on
         service_data:
           entity_id: script.robotina1105
@@ -188,7 +188,7 @@ cards:
         title: Restricted
         style:
           top: 45%
-          left: 40%
+          left: 30%
         service: script.turn_on
         service_data:
           entity_id: script.robotina1301
@@ -196,7 +196,7 @@ cards:
         title: Shopper
         style:
           top: 45%
-          left: 60%
+          left: 70%
         service: script.turn_on
         service_data:
           entity_id: script.robotina1302
