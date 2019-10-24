@@ -37,16 +37,18 @@ case $ROBOTINA_COMMAND in
      0103)
 
            /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'En México, innovación y diseño, tenemos \
-                                     la pasión de transformar los retos en \
-                                     oportunidades para generar cambios, romper \
-                                     inercias y abrir nuestra mente a nuevas \
-                                     posibilidades. '
+                                    'Desde los albores de nuestra civilización \
+                                     moderna, los humanos hemos estado empujando \
+                                     hacia algo, continuamente hemos estado creando \
+                                     herramientas para facilitarnos la vida, \
+                                     herramientas para ayudarnos a construir, \
+                                     sobrevivir y prosperar en las circunstancias \
+                                     de la era. Herramientas como el lenguaje, \
+                                     las matemáticas y la ciencia ayudaron a \
+                                     construir una sociedad temprana, y nunca \
+                                     se detuvo. ¿Cuál fue la herramienta que \
+                                     realmente cambió el mundo?'
 
-           /services/voice/voice.sh 'on' 'espeak' 'spanish' \
-                                    'Bienvenidos a nuestra plática: \
-                                     Robotina, es decir, su servidora! ya está aquí: \
-                                     Inteligencia Artificial'
            ;;
 
      0201)

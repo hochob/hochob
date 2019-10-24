@@ -1,0 +1,30 @@
+demos001:
+  sequence:
+    service: shell_command.demos001
+demos002:
+  sequence:
+    service: shell_command.demos002
+demos003:
+  sequence:
+    service: shell_command.demos003
+demos004:
+  sequence:
+    service: shell_command.demos004
+demos005:
+  sequence:
+    service: shell_command.demos005
+demos006:
+  sequence:
+    service: shell_command.demos006
+demos007:
+  sequence:
+    service: shell_command.demos007
+demos008:
+  sequence:
+    service: shell_command.demos008
+demos009:
+  sequence:
+    service: shell_command.demos009
+demos010:
+  sequence:
+    service: shell_command.demos010

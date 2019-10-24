@@ -37,7 +37,7 @@ LOCAL_TEXT="$2"
 if [ $# -eq 2 ]
 then
     if [ "$LOCAL_LANGUAGE" = "english" ]; then
-        export ESPEAK_LANGUAGE="-v en-us -a ${ESPEAK_AMPLITUDE} -p ${ESPEAK_PITCH} -s ${ESPEAK_SPEED}"
+        export ESPEAK_LANGUAGE="-v en-us+f2 -a ${ESPEAK_AMPLITUDE} -p ${ESPEAK_PITCH} -s ${ESPEAK_SPEED}"
     elif [ "$LOCAL_LANGUAGE" = "spanish" ]; then
         export ESPEAK_LANGUAGE="-v es+f2 -a ${ESPEAK_AMPLITUDE} -p ${ESPEAK_PITCH} -s ${ESPEAK_SPEED}"
     fi

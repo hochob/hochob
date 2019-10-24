@@ -4,242 +4,74 @@ path: home
 cards:
 
   - type: markdown
-    title: Open MIND 2019
+    title: Demos
     content: >
-      Un espacio de inspiración en donde convergen la innovación,
-      el diseño y las tendencias tecnológicas del futuro.
+      Show me the demo!
 
   - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina01.png
+    image: /local/media/Demos/Image/demos.jpg
     elements:
       - type: service-button
-        title: Hola...
-        style:
-          top: 95%
-          left: 35%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0101
-      - type: service-button
-        title: No...
-        style:
-          top: 95%
-          left: 55%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0102
-      - type: service-button
-        title: Bienvenidos
-        style:
-          top: 95%
-          left: 80%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0103
-
-  - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina02.png
-    elements:
-      - type: service-button
-        title: Imagina
-        style:
-          top: 25%
-          left: 20%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0201
-      - type: service-button
-        title: Aprende
-        style:
-          top: 25%
-          left: 50%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0202
-      - type: service-button
-        title: Colabora
-        style:
-          top: 25%
-          left: 80%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0203
-
-
-  - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina03.png
-    elements:
-      - type: service-button
-        title: Retos
+        title: Gstreamer
         style:
           top: 10%
           left: 10%
         service: script.turn_on
         service_data:
-          entity_id: script.robotina0301
-
-  - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina04.png
-    elements:
+          entity_id: script.demos001
       - type: service-button
-        title: INEGI
+        title: Haar
         style:
-          top: 10%
+          top: 20%
           left: 10%
         service: script.turn_on
         service_data:
-          entity_id: script.robotina0401
+          entity_id: script.demos002
       - type: service-button
-        title: Problemas
+        title: Zone
         style:
-          top: 10%
-          left: 65%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0402
-
-  - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina05.png
-    elements:
-      - type: service-button
-        title: Deep Blue
-        style:
-          top: 7%
-          left: 50%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0501
-
-  - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina06.png
-    elements:
-      - type: service-button
-        title: AlphaGo
-        style:
-          top: 7%
-          left: 35%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0601
-      - type: service-button
-        title: AlphaZero
-        style:
-          top: 7%
-          left: 65%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina0602
-
-  - type: picture
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina10.png
-
-  - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina11.png
-    elements:
-      - type: service-button
-        title: 01
-        style:
-          top: 43%
+          top: 30%
           left: 10%
         service: script.turn_on
         service_data:
-          entity_id: script.robotina1101
+          entity_id: script.demos003
       - type: service-button
-        title: 02
+        title: Gaze
         style:
-          top: 43%
-          left: 30%
+          top: 40%
+          left: 10%
         service: script.turn_on
         service_data:
-          entity_id: script.robotina1102
+          entity_id: script.demos004
       - type: service-button
-        title: 03
+        title: Mood
         style:
-          top: 43%
-          left: 50%
+          top: 50%
+          left: 10%
         service: script.turn_on
         service_data:
-          entity_id: script.robotina1103
+          entity_id: script.demos005
       - type: service-button
-        title: 04
+        title: Parking
         style:
-          top: 43%
-          left: 70%
+          top: 60%
+          left: 10%
         service: script.turn_on
         service_data:
-          entity_id: script.robotina1104
+          entity_id: script.demos006
       - type: service-button
-        title: 05
+        title: City
         style:
-          top: 43%
-          left: 90%
+          top: 70%
+          left: 10%
         service: script.turn_on
         service_data:
-          entity_id: script.robotina1105
-
-
-  - type: picture
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina12.png
-
-  - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina13.png
-    elements:
+          entity_id: script.demos007
       - type: service-button
-        title: Restricted
+        title: OpenRTiST
         style:
-          top: 45%
-          left: 30%
+          top: 80%
+          left: 10%
         service: script.turn_on
         service_data:
-          entity_id: script.robotina1301
-      - type: service-button
-        title: Shopper
-        style:
-          top: 45%
-          left: 70%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina1302
-
-  - type: picture
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina14.png
-
-  - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina15.png
-    elements:
-      - type: service-button
-        title: Shopper
-        style:
-          top: 45%
-          left: 50%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina1501
-
-  - type: picture
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina16.png
-
-  - type: picture
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina17.png
-
-  - type: picture
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina18.png
-
-  - type: picture
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina19.png
-
-  - type: picture
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina20.png
-
-  - type: picture-elements
-    image: /local/media/OpenMind/Image/OpenMind2019Robotina21.png
-    elements:
-      - type: service-button
-        title: Soñemos
-        style:
-          top: 45%
-          left: 66%
-        service: script.turn_on
-        service_data:
-          entity_id: script.robotina2101
-
+          entity_id: script.demos008

@@ -1,0 +1,108 @@
+#!/bin/sh
+
+# =============================================================================
+# Variables
+# =============================================================================
+
+. /services/main.sh
+
+export DEMOS_PID=$$
+export DEMOS_NAME="DEMOS"
+export DEMOS_PATH=$(readlink -f "$0")
+export DEMOS_DIRECTORY=$(dirname "$DEMOS_PATH")
+export DEMOS_COMMAND=$1
+
+# =============================================================================
+# Functions
+# =============================================================================
+
+# None
+
+# =============================================================================
+# Main
+# =============================================================================
+
+case $DEMOS_COMMAND in
+
+     001)
+           /services/voice/voice.sh 'on' 'espeak' 'english' \
+           'GStreamer is a library for constructing graphs of media-handling
+            components. The applications it supports range from simple playback,
+            audio video streaming to complex audio and video mixing and processing.'
+
+           ;;
+
+     002)
+           /services/voice/voice.sh 'on' 'espeak' 'english' \
+           'Object Detection using Haar feature-based cascade classifiers is an
+            effective object detection method, it is a machine learning based approach
+            where a cascade function is trained from a lot of positive and negative
+            images. It is then used to detect objects in other images.'
+
+           ;;
+
+     003)
+
+           /services/voice/voice.sh 'on' 'espeak' 'english' \
+           'This application is designed to detect the humans present in a predefined
+            selected assembly line area. If the people enters the marked assembly area,
+            it raises the alert and sends through mqtt. It is intended to demonstrate
+            how to use CV to improve assembly line safety for human operators and factory
+            workers.'
+
+           ;;
+
+     004)
+           /services/voice/voice.sh 'on' 'espeak' 'english' \
+           'This application is designed for a retail shelf mounted camera system that
+            counts the number of passers-by and the number of people who look towards the
+            display. It is intended to provide real-world marketing statistics for in-store
+            shelf-space advertising.'
+           ;;
+
+     005)
+           /services/voice/voice.sh 'on' 'espeak' 'english' \
+            'This shopper mood monitor application is one of a series of reference implementations
+             for Computer Vision using the Intel Distribution of OpenVINO toolkit. It is designed
+             for a retail shelf mounted camera system that counts the number of passers-by who look
+             towards the display and captures their mood, which is classified into 5 emotions:
+             Neutral, Happy, Sad, Surprised and Anger. It is intended to provide real-world marketing
+             statistics for in-store shopping mood analysis.'
+
+           ;;
+
+     006)
+           /services/voice/voice.sh 'on' 'espeak' 'english' \
+            'The parking lot counter is one of a series of reference implementations for Computer Vision
+             using the Intel® Distribution of OpenVINO™ toolkit. It is designed for a parking space area
+             with mounted camera which monitors available parking space by tracking the count of the
+             vehicles entering and leaving the parking space area. This example is intended to demonstrate
+             how to use CV to monitor parking spaces in dedicated parking area.'
+
+           ;;
+
+     007)
+           /services/voice/voice.sh 'on' 'espeak' 'english' \
+            'This project consists on showcasing the advantages of the Intel’s OpenVINO toolkit. We will
+             develop a Near Misses case scenario, where we will detect vehicles and pedestrians and estimate
+             a metric of a crossroad’s dangerousness. For that, we will use the OpenVINO toolkit and OpenCV,
+             all written in C++.'
+
+           ;;
+
+     008)
+           /services/voice/voice.sh 'on' 'espeak' 'english' \
+            'OpenRTiST utilizes Gabriel, a platform for wearable cognitive assistance applications,
+             to transform the live video from a mobile client into the styles of various artworks. The frames
+             are streamed to a server where the chosen style is applied and the transformed images are returned
+             to the client.'
+
+           ;;
+
+
+     *)
+           echo "Sorry, I don't understand"
+           ;;
+esac
+
+# End of File
