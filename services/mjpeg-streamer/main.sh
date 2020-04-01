@@ -1,19 +1,10 @@
-#!/bin/sh
-
-set -x
+#!/usr/bin/env sh
 
 # =============================================================================
 # Variables
 # =============================================================================
 
-. /services/main.sh 
-
-export SPEECHSYNTHETIZER_PID=$$
-
-LOCAL_PLAY="$1"
-LOCAL_ENGINE="$2"
-LOCAL_LANGUAGE="$3"
-LOCAL_TEXT="$4"
+# None
 
 # =============================================================================
 # Functions
@@ -25,20 +16,6 @@ LOCAL_TEXT="$4"
 # Main
 # =============================================================================
 
-if [ $# -eq 4 ]; then
-
-    if [ "$LOCAL_ENGINE" = "espeak" ]; then
-        espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
-    fi
-
-    if [ "$LOCAL_PLAY" = "on" ]; then
-        #aplay $SPEECH_FILE
-        echo
-    fi
-
-else
-    echo "Invalid number of arguments, see Documentation"
-    exit 1
-fi
-
-# End of File
+export LD_LIBRARY_PATH=$HOME/mjpg-streamer/mjpg-streamer-experimental
+cd $HOME/mjpg-streamer/mjpg-streamer-experimental
+./mjpg_streamer -i "input_uvc.so -d ${VIDEO_DEVICE}" -o "output_http.so -p ${SERVER_TCP_PORT} -w ./www"

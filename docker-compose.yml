@@ -66,15 +66,15 @@ services:
       - /dev/dri/card1:/dev/dri/card0
       - /dev/dri/renderD129:/dev/dri/renderD128
     volumes:
-      - ./homeassistant:/config
-      - ./services:/services
-      - ./applications:/applications
-      - ./media:/config/www/media
+      - ./homeassistant:/config:consistent
+      - ./services:/services:consistent
+      - ./applications:/applications:consistent
+      - ./media:/config/www/media:consistent
       - /etc/localtime:/etc/localtime:ro
-      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /tmp/.X11-unix:/tmp/.X11-unix:consistent
       - $HOME/.Xauthority:/root/.Xauthority:rw
-      - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native
-      - ~/.config/pulse/cookie:/root/.config/pulse/cookie
+      - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native:consistent
+      - ~/.config/pulse/cookie:/root/.config/pulse/cookie:consistent
 
   influxdb:
     image: influxdb

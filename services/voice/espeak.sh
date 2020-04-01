@@ -13,10 +13,11 @@ export ESPEAK_PLAY="-w"
 export ESPEAK_LANGUAGE="-ven+m5"
 export ESPEAK_INPUT="No input has been provided"
 export ESPEAK_AMPLITUDE=120
-export ESPEAK_PITCH=10
-export ESPEAK_SPEED=180
+export ESPEAK_PITCH=40
+export ESPEAK_SPEED=150
 export ESPEAK_SPEECH_FILE=$ESPEAK_SPEECH_FILE
 export ESPEAK_SPEECH_MP3_FILE=$ESPEAK_SPEECH_MP3_FILE
+export FFMPEG_BINARY=ffmpeg
 export SPEECH_FILE=$SPEECH_FILE
 export SPEECH_MP3_FILE=$SPEECH_MP3_FILE
 
@@ -36,19 +37,22 @@ LOCAL_TEXT="$2"
 if [ $# -eq 2 ]
 then
     if [ "$LOCAL_LANGUAGE" = "english" ]; then
-        export ESPEAK_LANGUAGE="-v en-us -a ${ESPEAK_AMPLITUDE} -p ${ESPEAK_PITCH} -s ${ESPEAK_SPEED}"
+        export ESPEAK_LANGUAGE="-v en-us+f2 -a ${ESPEAK_AMPLITUDE} -p ${ESPEAK_PITCH} -s ${ESPEAK_SPEED}"
     elif [ "$LOCAL_LANGUAGE" = "spanish" ]; then
-        export ESPEAK_LANGUAGE="-v es-la -a ${ESPEAK_AMPLITUDE} -p ${ESPEAK_PITCH} -s ${ESPEAK_SPEED}"
+        export ESPEAK_LANGUAGE="-v es+f2 -a ${ESPEAK_AMPLITUDE} -p ${ESPEAK_PITCH} -s ${ESPEAK_SPEED}"
     fi
 
     export ESPEAK_INPUT="$LOCAL_TEXT"
 
-    $ESPEAK_BINARY $ESPEAK_PLAY $ESPEAK_SPEECH_FILE $ESPEAK_LANGUAGE "$ESPEAK_INPUT"
+    $ESPEAK_BINARY $ESPEAK_PLAY $ESPEAK_SPEECH_FILE $ESPEAK_LANGUAGE "$ESPEAK_INPUT" --stdout | aplay -D 'default'
 
-    ffmpeg -y -i $ESPEAK_SPEECH_FILE $ESPEAK_SPEECH_MP3_FILE
+    #$FFMPEG_BINARY -y -i $ESPEAK_SPEECH_FILE $ESPEAK_SPEECH_MP3_FILE
 
     cp $ESPEAK_SPEECH_FILE $SPEECH_FILE
     cp $ESPEAK_SPEECH_MP3_FILE $SPEECH_MP3_FILE
+
+    killall -9 $ESPEAK_BINARY
+    #killall -9 $FFMPEG_BINARY
 
 else
     echo "Invalid number of arguments, see Documentation"

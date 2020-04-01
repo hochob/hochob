@@ -4,14 +4,74 @@ path: home
 cards:
 
   - type: markdown
-    title: Welcome to Hochob!
+    title: Demos
     content: >
-      Visitors Center
+      Show me the demo!
 
-  - type: picture
-    title: Welcome!
-    image: /local/media/Intel/Image/BobSwanIntel.jpg
-    hold_action:
-      action: call-service
-      service: shell_command.ceo
-
+  - type: picture-elements
+    image: /local/media/Demos/Image/demos.jpg
+    elements:
+      - type: service-button
+        title: Gstreamer
+        style:
+          top: 10%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.demos001
+      - type: service-button
+        title: Haar
+        style:
+          top: 20%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.demos002
+      - type: service-button
+        title: Zone
+        style:
+          top: 30%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.demos003
+      - type: service-button
+        title: Gaze
+        style:
+          top: 40%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.demos004
+      - type: service-button
+        title: Mood
+        style:
+          top: 50%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.demos005
+      - type: service-button
+        title: Parking
+        style:
+          top: 60%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.demos006
+      - type: service-button
+        title: City
+        style:
+          top: 70%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.demos007
+      - type: service-button
+        title: OpenRTiST
+        style:
+          top: 80%
+          left: 10%
+        service: script.turn_on
+        service_data:
+          entity_id: script.demos008

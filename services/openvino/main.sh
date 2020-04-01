@@ -1,19 +1,10 @@
-#!/bin/sh
-
-set -x
+#!/bin/bash
 
 # =============================================================================
 # Variables
 # =============================================================================
 
-. /services/main.sh 
-
-export SPEECHSYNTHETIZER_PID=$$
-
-LOCAL_PLAY="$1"
-LOCAL_ENGINE="$2"
-LOCAL_LANGUAGE="$3"
-LOCAL_TEXT="$4"
+OPENVINO_INSTALLATION=/opt/intel/openvino/
 
 # =============================================================================
 # Functions
@@ -25,20 +16,14 @@ LOCAL_TEXT="$4"
 # Main
 # =============================================================================
 
-if [ $# -eq 4 ]; then
+cd $HOME
 
-    if [ "$LOCAL_ENGINE" = "espeak" ]; then
-        espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
-    fi
+echo "MODELS=$OPENVINO_INSTALLATION/deployment_tools/intel_models/" >> /home/user/.bashrc
 
-    if [ "$LOCAL_PLAY" = "on" ]; then
-        #aplay $SPEECH_FILE
-        echo
-    fi
+mkdir openvino-samples
+cd openvino-samples/
 
-else
-    echo "Invalid number of arguments, see Documentation"
-    exit 1
-fi
+# Samples
 
-# End of File
+cmake /opt/intel/computer_vision_sdk/inference_engine/samples/
+make all

@@ -1,19 +1,13 @@
 #!/bin/sh
 
-set -x
-
 # =============================================================================
 # Variables
 # =============================================================================
 
-. /services/main.sh 
-
-export SPEECHSYNTHETIZER_PID=$$
-
-LOCAL_PLAY="$1"
-LOCAL_ENGINE="$2"
-LOCAL_LANGUAGE="$3"
-LOCAL_TEXT="$4"
+export TOYOTA_PID=$$
+export TOYOTA_NAME="Toyota"
+export TOYOTA_PATH=$(readlink -f "$0")
+export TOYOTA_DIRECTORY=$(dirname "$TOYOTA_PATH")
 
 # =============================================================================
 # Functions
@@ -25,20 +19,12 @@ LOCAL_TEXT="$4"
 # Main
 # =============================================================================
 
-if [ $# -eq 4 ]; then
+. /services/main.sh
 
-    if [ "$LOCAL_ENGINE" = "espeak" ]; then
-        espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
-    fi
+/services/voice/voice.sh 'on' 'espeak' 'spanish' \
+  'Hola mundo! Probando uno, dos, tres, probando!'
 
-    if [ "$LOCAL_PLAY" = "on" ]; then
-        #aplay $SPEECH_FILE
-        echo
-    fi
-
-else
-    echo "Invalid number of arguments, see Documentation"
-    exit 1
-fi
+/services/voice/voice.sh 'on' 'espeak' 'english' \
+  'Hello world! Testing One, two, three, testing!'
 
 # End of File

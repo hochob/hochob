@@ -4,14 +4,9 @@ path: techie
 id: Techie
 cards:
 
-  - type: picture
-    image: /local/media/Amikoo/Image/LupeBienvenidaIntel.png
-    hold_action:
-      action: call-service
-      service: shell_command.spacex
-
-  - type: picture
-    image: /local/media/Amikoo/Image/AmikooOutsideIntelLobby.jpg
-    tap_action:
-      action: call-service
-      service: shell_command.google
+  - type: entities
+    title: Services Audio Espeak
+    show_header_toggle: false
+    entities:
+      - entity: script.toyota
+        name: Testing 1 2 3 Testing
