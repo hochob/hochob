@@ -1,5 +1,4 @@
 weather:
-  view: true
   icon: mdi:weather-cloudy
   name: Weather
   entities:
