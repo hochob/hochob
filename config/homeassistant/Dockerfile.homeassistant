@@ -15,6 +15,7 @@ RUN apk update && \
     alsaconf \
     vlc \
     espeak \
-    eog
+    eog \
+    mosquitto-clients
 
 ADD asoundrc /root/.asoundrc
