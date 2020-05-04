@@ -1,7 +1,17 @@
-pcm.!default {
+pcm.!default{
         type plug
+        slave.pcm "dmixer"
+}
+
+pcm.dmixer {
+        type dmix
+        ipc_key 1024
         slave {
                 pcm "hw:1,0"
+        }
+        bindings {
+                0 0
+                1 1
         }
 }
 
