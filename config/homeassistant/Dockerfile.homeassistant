@@ -5,25 +5,22 @@ MAINTAINER Abraham Arce "xe1gyq@gmail.com"
 ENV TIMEZONE America/Mexico_City
 USER root
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    eog \
-    psmisc \
-    mosquitto-clients \
+RUN apk update && \
+    apk --no-cache add \
     alsa-utils \
-    libpulse0 \
-    pulseaudio \
-    vim \
+    alsaconf \
+    alsa-utils-doc \
+    eog \
     espeak \
-    vlc \
+    mesa-dri-classic \
+    mesa-gl \
+    mosquitto-clients \
     mplayer \
-    libgl1-mesa-glx \
-    libgl1-mesa-dri \
-    mpg123 && \
-    rm -rf /var/lib/apt/lists/*
+    openrc \
+    psmisc \
+    pulseaudio \ 
+    shadow \
+    vim \
+    vlc 
 
 ADD asoundrc /root/.asoundrc
-
-RUN usermod -a -G `getent group audio | cut -d: -f3` root && \
-    usermod -a -G `getent group video | cut -d: -f3` root && \
-    sed -i 's/geteuid/getppid/' /usr/bin/vlc
