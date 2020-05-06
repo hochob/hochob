@@ -1,5 +1,4 @@
 image_processing:
-  view: true
   icon: mdi:image-filter
   name: Image Processing
   entities:
