@@ -3,17 +3,25 @@ icon: mdi:home-heart
 path: home
 cards:
 
-  - type: markdown
-    title: >
-      Hochob
-    content: >
-      {% if is_state('input_boolean.english_language', 'on') %}
-        Welcome to our Visitors Center!
-        An awesome space built by an awesome team of volunteers thought to inspire young people to discover what Engineers, Scientists and Researchers do and to motivate them to explore the Science, Technology, Engineering and Mathematics fields for their future Education through the use of hardware and software projects.
-      {% else %}
-        Bienvenidos a nuestro Centro de Visitantes!
-        Un increíble espacio creado por un increíble equipo de voluntarios para inspirar a los jóvenes y descubrir a que se dedican los Ingenieros, Científicos e Investigadores, y que los motiva a explorar los campos de la Ciencia, Tecnología, Ingeniería y Matemática; para su futura educación a traves del uso de projectos de hardware y software
-      {% endif %}
-      
+  - type: vertical-stack
+    cards:
+    - type: markdown
+      title: >
+        Hochob
+      content: >
+        {% if is_state('input_boolean.english_language', 'on') %}
+          Welcome to our Visitors Center!
+          An awesome space built by an awesome team of volunteers thought to inspire young people to discover what Engineers, Scientists and Researchers do and to motivate them to explore the Science, Technology, Engineering and Mathematics fields for their future Education through the use of hardware and software projects.
+        {% else %}
+          Bienvenidos a nuestro Centro de Visitantes!
+          Un increíble espacio creado por un increíble equipo de voluntarios para inspirar a los jóvenes y descubrir a que se dedican los Ingenieros, Científicos e Investigadores, y que los motiva a explorar los campos de la Ciencia, Tecnología, Ingeniería y Matemática; para su futura educación a traves del uso de projectos de hardware y software
+        {% endif %}
 
-
+    - type: button
+      name: English Language
+      entity: input_boolean.english_language
+      hold_action:
+        action: call-service
+        service: input_boolean.toggle
+        service_data:
+          entity_id: input_boolean.english_language
