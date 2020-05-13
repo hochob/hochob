@@ -9,7 +9,6 @@ cards:
       Visitors Center
 
   - type: picture
-    title: Welcome!
     image: /local/media/Intel/Image/BobSwanIntel.jpg
     hold_action:
       action: call-service
