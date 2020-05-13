@@ -24,3 +24,6 @@ homeassistant/www/
 
 # Media
 media/
+
+#VSCode
+.vscode
