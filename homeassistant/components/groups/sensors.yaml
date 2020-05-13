@@ -4,7 +4,6 @@ sensors:
   entities:
     - group.sensors_bitcoin
     - group.sensors_darksky
-    - group.sensors_glances
     - group.sensors_moon
     - group.sensors_mqtt
     - group.sensors_openexchangerates
@@ -59,21 +58,6 @@ sensors_darksky:
     - sensor.dark_sky_wind_bearing
     - sensor.dark_sky_wind_gust
     - sensor.dark_sky_wind_speed
-
-sensors_glances:
-  name: Glances
-  entities:
-    - sensor.glances_containers_active
-    - sensor.glances_containers_cpu_used
-    - sensor.glances_cpu_load
-    - sensor.glances_cpu_temp
-    - sensor.glances_disk_used
-    - sensor.glances_ram_used
-    - sensor.glances_running
-    - sensor.glances_sleeping
-    - sensor.glances_swap_used
-    - sensor.glances_thread
-    - sensor.glances_total
 
 sensors_moon:
   name: Moon
