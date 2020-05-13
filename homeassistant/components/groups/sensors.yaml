@@ -9,7 +9,6 @@ sensors:
     - group.sensors_mqtt
     - group.sensors_openexchangerates
     - group.sensors_spacelaunch
-    - group.sensors_speedtestnet
     - group.sensors_timedate
     - group.sensors_waqi
     - group.sensors_worldclock
@@ -95,13 +94,6 @@ sensors_spacelaunch:
   name: Space Launch
   entities:
     - sensor.next_launch
-
-sensors_speedtestnet:
-  name: SpeedTestNet
-  entities:
-    - sensor.speedtest_download
-    - sensor.speedtest_ping
-    - sensor.speedtest_upload
 
 sensors_timedate:
   name: Time Date
