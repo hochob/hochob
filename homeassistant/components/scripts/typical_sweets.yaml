@@ -1,0 +1,9 @@
+#Welcome standalone
+alegria:
+  sequence:
+    service: shell_command.alegria
+
+#Welcome to start the tour
+alfenique:
+  sequence:
+    service: shell_command.alfenique
