@@ -18,6 +18,7 @@ RUN apk update && \
     openrc \
     psmisc \
     pulseaudio \ 
+    python2 \
     shadow \
     vim \
     vlc 
