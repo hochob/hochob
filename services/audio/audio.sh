@@ -6,9 +6,9 @@ set -x
 # Variables
 # =============================================================================
 
-export VLC_PID=$$
-export VLC_BINARY=cvlc
-export VLC_ARGUMENTS=--play-and-exit
+export MPV_PID=$$
+export MPV_BINARY=mpv
+export MPV_ARGUMENTS=--audio-device=alsa
 
 LOCAL_FILE="$1"
 
@@ -24,7 +24,7 @@ LOCAL_FILE="$1"
 
 if [ $# -eq 1 ]
 then
-    $VLC_BINARY $VLC_ARGUMENTS $LOCAL_FILE
+    $MPV_BINARY $MPV_ARGUMENTS $LOCAL_FILE
 else
     echo "Invalid number of arguments, see Documentation"
     exit 1
