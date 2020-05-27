@@ -6,10 +6,11 @@ set -x
 # Variables
 # =============================================================================
 
-export VLC_PID=$$
-export VLC_BINARY=cvlc
-export VLC_ARGUMENTS="--no-video-title-show --fullscreen"
-export VLC_LOOP="--loop"
+export MPV_PID=$$
+export MPV_BINARY=mpv
+export MPV_ARGUMENTS="--audio-device=alsa --fs --keep-open=yes "
+export MPV_LOOP="--loop"
+export KILL_MPV="kill $(ps aux | grep 'mpv')"
 
 LOCAL_LOOP="$1"
 LOCAL_FILE="$2"
@@ -24,12 +25,13 @@ LOCAL_FILE="$2"
 # Main
 # =============================================================================
 
+$KILL_MPV
 if [ $# -eq 2 ]
 then
     if [ "$LOCAL_LOOP" = "on" ]; then
-        $VLC_BINARY $VLC_ARGUMENTS $VLC_LOOP $LOCAL_FILE &
+        $MPV_BINARY $MPV_ARGUMENTS $MPV_LOOP $LOCAL_FILE
     elif [ "$LOCAL_LOOP" = "off" ]; then
-        $VLC_BINARY --play-and-pause $VLC_ARGUMENTS $LOCAL_FILE &
+        $MPV_BINARY $MPV_ARGUMENTS $LOCAL_FILE
     fi
 else
     echo "Invalid number of arguments, see Documentation"

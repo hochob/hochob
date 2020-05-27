@@ -1,16 +1,18 @@
 #!/bin/sh
 
-set -x
+#https://linux.die.net/man/1/feh
 
 # =============================================================================
 # Variables
 # =============================================================================
 
-export MPV_PID=$$
-export MPV_BINARY=mpv
-export MPV_ARGUMENTS=--audio-device=alsa
+export FEH_PID=$$
+export FEH_BINARY=feh
+export FEH_FULLSCREEN_ARGUMENT="-F -Y"
+export FEH_SLIDESHOW_ARGUMENT="-z -D 5"
 
-LOCAL_FILE="$1"
+
+LOCAL_FILES="$1"
 
 # =============================================================================
 # Functions
@@ -24,10 +26,16 @@ LOCAL_FILE="$1"
 
 if [ $# -eq 1 ]
 then
-    $MPV_BINARY $MPV_ARGUMENTS $LOCAL_FILE
+    killall -9 $FEH_BINARY
+    if [ -d "${LOCAL_FILES}" ]; then
+        $FEH_BINARY $FEH_FULLSCREEN_ARGUMENT $FEH_SLIDESHOW_ARGUMENT $LOCAL_FILES
+    elif [ -f "${LOCAL_FILES}" ]; then
+        $FEH_BINARY $FEH_FULLSCREEN_ARGUMENT $LOCAL_FILES
+    fi
+    
 else
     echo "Invalid number of arguments, see Documentation"
     exit 1
 fi
 
-# End of File
+# End of file

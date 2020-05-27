@@ -11,16 +11,18 @@ RUN apk update && \
     alsaconf \
     alsa-utils-doc \
     eog \
+    feh \
     mesa-dri-intel \
     mesa-gl \
     mosquitto-clients \
-    mplayer \
+    mpv \
     openrc \
     psmisc \
     pulseaudio \ 
+    python2 \
     shadow \
-    vim \
-    vlc 
+    vim
+    
 
 ADD asoundrc /root/.asoundrc
 
