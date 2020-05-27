@@ -11,6 +11,7 @@ RUN apk update && \
     alsaconf \
     alsa-utils-doc \
     eog \
+    feh \
     mesa-dri-intel \
     mesa-gl \
     mosquitto-clients \
