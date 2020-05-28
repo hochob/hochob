@@ -30,6 +30,10 @@ export AMIKOO_MULTIMEDIA_VIDEO=$AMIKOO_MULTIMEDIA/video
 export MQTT_SERVER_ADDRESS=172.17.0.1
 export MQTT_SERVER_PORT=1883
 
+# Services streaming
+
+export CHROMECAST_STREAM=/services/streaming/chromecaststream.sh
+
 # Services Voice
 
 export SPEECH_FILE=/config/www/media/speech-file.wav
