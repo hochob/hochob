@@ -15,7 +15,6 @@ LOCAL_PHRASE="Bienvenidos a mi casa, su casa. \
     Soy guía en el emocionante Centro de Visitantes de Intel. \
     Estoy listo para mostrarles lo interesante que es el mundo\
     de las Ciencias, la Tecnología, las Ingenierías y las Matemáticas.\
-    Por favor pasen, mi voz los guiara a traves de todo el recorrido \
     "
 
 # =============================================================================
