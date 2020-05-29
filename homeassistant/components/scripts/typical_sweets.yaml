@@ -7,3 +7,8 @@ alegria:
 alfenique:
   sequence:
     service: shell_command.alfenique
+
+#Start the tour
+ate:
+  sequence:
+    service: shell_command.ate
