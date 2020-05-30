@@ -12,3 +12,7 @@ alfenique:
 ate:
   sequence:
     service: shell_command.ate
+
+borrachitos:
+  sequence:
+    service: shell_command.borrachitos
