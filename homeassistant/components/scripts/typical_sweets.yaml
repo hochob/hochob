@@ -20,3 +20,7 @@ borrachitos:
 camotes:
   sequence:
     service: shell_command.camotes
+
+charamusca:
+  sequence:
+    service: shell_command.charamusca
