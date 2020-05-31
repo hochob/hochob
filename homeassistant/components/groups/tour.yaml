@@ -1,0 +1,16 @@
+tour:
+  icon: mdi:bus-school
+  name: Tour
+  entities:
+    - group.tour_firsthall
+
+tour_firsthall:
+  name: Tour
+  entities:
+    - script.alfenique
+    - script.ate
+    - script.borrachitos
+    - script.camotes
+    - script.charamusca
+    - script.chupirul
+    - script.cocada
