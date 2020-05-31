@@ -24,3 +24,7 @@ camotes:
 charamusca:
   sequence:
     service: shell_command.charamusca
+
+chupirul:
+  sequence:
+    service: shell_command.chupirul
