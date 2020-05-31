@@ -6,9 +6,9 @@
 
 . /services/main.sh
 
-export BORRACHITOS_PID=$$
-export BORRACHITOS_PATH=$(readlink -f "$0")
-export BORRACHITOS_DIRECTORY=$(dirname "$MECCANOID_PATH")
+export CAMOTES_PID=$$
+export CAMOTES_PATH=$(readlink -f "$0")
+export CAMOTES_DIRECTORY=$(dirname "$MECCANOID_PATH")
 
 LOCAL_PHRASE="Para empezar, me gustaría mostrarles algo que pasó 'Antes del Inicio' \
     "

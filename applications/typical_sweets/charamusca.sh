@@ -6,9 +6,9 @@
 
 . /services/main.sh
 
-export BORRACHITOS_PID=$$
-export BORRACHITOS_PATH=$(readlink -f "$0")
-export BORRACHITOS_DIRECTORY=$(dirname "$MECCANOID_PATH")
+export CHARAMUSCA_PID=$$
+export CHARAMUSCA_PATH=$(readlink -f "$0")
+export CHARAMUSCA_DIRECTORY=$(dirname "$MECCANOID_PATH")
 
 LOCAL_PHRASE="Ahora, les contaré una historia que comenzó hace más 50 años \
     "
