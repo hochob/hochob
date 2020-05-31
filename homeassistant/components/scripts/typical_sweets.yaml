@@ -28,3 +28,7 @@ charamusca:
 chupirul:
   sequence:
     service: shell_command.chupirul
+
+cocada:
+  sequence:
+    service: shell_command.cocada
