@@ -16,3 +16,7 @@ ate:
 borrachitos:
   sequence:
     service: shell_command.borrachitos
+
+camotes:
+  sequence:
+    service: shell_command.camotes
