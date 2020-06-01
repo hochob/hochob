@@ -3,9 +3,10 @@ tour:
   name: Tour
   entities:
     - group.tour_firsthall
+    - group.tour_secondhall
 
 tour_firsthall:
-  name: Tour
+  name: Tour First Hall
   entities:
     - script.alfenique
     - script.ate
@@ -15,3 +16,8 @@ tour_firsthall:
     - script.chupirul
     - script.cocada
     - script.glorias
+
+tour_secondhall:
+  name: Tour Second Hall
+  entities:
+    - script.jamoncillo

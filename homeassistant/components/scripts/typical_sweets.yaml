@@ -36,3 +36,7 @@ cocada:
 glorias:
   sequence:
     service: shell_command.glorias
+
+jamoncillo:
+  sequence:
+    service: shell_command.jamoncillo
