@@ -52,3 +52,7 @@ mazapan:
 merengue:
   sequence:
     service: shell_command.merengue
+
+muegano:
+  sequence:
+    service: shell_command.muegano
