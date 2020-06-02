@@ -48,3 +48,7 @@ macarrones:
 mazapan:
   sequence:
     service: shell_command.mazapan
+
+merengue:
+  sequence:
+    service: shell_command.merengue
