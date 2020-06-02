@@ -40,3 +40,7 @@ glorias:
 jamoncillo:
   sequence:
     service: shell_command.jamoncillo
+
+macarrones:
+  sequence:
+    service: shell_command.macarrones

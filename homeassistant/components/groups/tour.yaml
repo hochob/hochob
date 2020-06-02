@@ -21,3 +21,4 @@ tour_secondhall:
   name: Tour Second Hall
   entities:
     - script.jamoncillo
+    - script.macarrones
