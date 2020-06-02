@@ -44,3 +44,7 @@ jamoncillo:
 macarrones:
   sequence:
     service: shell_command.macarrones
+
+mazapan:
+  sequence:
+    service: shell_command.mazapan
