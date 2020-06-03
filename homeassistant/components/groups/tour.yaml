@@ -4,6 +4,7 @@ tour:
   entities:
     - group.tour_firsthall
     - group.tour_secondhall
+    - group.tour_thirdhall
 
 tour_firsthall:
   name: Tour First Hall
@@ -25,3 +26,8 @@ tour_secondhall:
     - script.mazapan
     - script.merengue
     - script.muegano
+
+tour_thirdhall:
+  name: Tour Third Hall
+  entities:
+    - script.palanqueta

@@ -56,3 +56,7 @@ merengue:
 muegano:
   sequence:
     service: shell_command.muegano
+
+palanqueta:
+  sequence:
+    service: shell_command.palanqueta
