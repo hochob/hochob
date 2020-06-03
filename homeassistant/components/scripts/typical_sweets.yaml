@@ -60,3 +60,7 @@ muegano:
 palanqueta:
   sequence:
     service: shell_command.palanqueta
+
+tortadesantaclara:
+  sequence:
+    service: shell_command.tortadesantaclara

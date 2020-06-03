@@ -31,3 +31,4 @@ tour_thirdhall:
   name: Tour Third Hall
   entities:
     - script.palanqueta
+    - script.tortadesantaclara
