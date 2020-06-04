@@ -1,0 +1,32 @@
+title: Tour
+icon: mdi:bus-school
+path: tour
+id: Tour
+cards:
+
+  - type: entities
+    title: Lupe Tour
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: First Hall
+      - script.alfenique
+      - script.ate
+      - script.borrachitos
+      - script.camotes
+      - script.charamusca
+      - script.chupirul
+      - script.cocada
+      - script.glorias
+      - type: section
+        label: Second Hall
+      - script.jamoncillo
+      - script.macarrones
+      - script.mazapan
+      - script.merengue
+      - script.muegano
+      - type: section
+        label: Third Hall
+      - script.palanqueta
+      - script.tortadesantaclara
+      - script.olladetamarindo
