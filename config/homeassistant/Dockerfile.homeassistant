@@ -10,6 +10,7 @@ RUN apk update && \
     alsa-utils \
     alsaconf \
     alsa-utils-doc \
+    curl \
     eog \
     feh \
     mesa-dri-intel \
