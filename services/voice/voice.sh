@@ -27,17 +27,27 @@ LOCAL_TEXT="$4"
 # =============================================================================
 
 if [ $# -eq 4 ]; then
-
-    if [ "$LOCAL_ENGINE" = "espeak" ]; then
-        espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
-    fi
-
-    if [ "$LOCAL_PLAY" = "on" ]; then
-        aplay $SPEECH_FILE
-    #Stream to chromecast passing the device name in the local_play variable
-    else
-        $CHROMECAST_STREAM "$LOCAL_PLAY" "1.0" "$SPEECH_FILE"
-    fi
+    
+    case "$LOCAL_PLAY" in
+        "on")
+            #Plays voice at local device
+            if [ "$LOCAL_ENGINE" = "espeak" ]; then
+              espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
+            fi
+            aplay $SPEECH_FILE
+            ;;
+        "amikoo")
+            #Send HTTP POST to TTS URL
+            curl.sh "${LOCAL_TEXT}"
+            ;;
+        *) 
+            #Look for chromecast device name
+            if [ "$LOCAL_ENGINE" = "espeak" ]; then
+              espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
+            fi
+            $CHROMECAST_STREAM "$LOCAL_PLAY" "1.0" "$SPEECH_FILE"
+            ;;
+    esac
 
 
 else
