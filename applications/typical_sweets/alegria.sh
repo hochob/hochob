@@ -34,6 +34,6 @@ LOCAL_PHRASE="Bienvenidos a mi casa, su casa. \
 # Main
 # =============================================================================
 
-/services/voice/voice.sh "on" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
 # End of File

@@ -1,0 +1,7 @@
+# Lupe introduce herself
+alias: "Saludo Standalone"
+trigger:
+  platform: event
+  event_type: rhasspy_Saludo
+action:
+  service: shell_command.alegria
