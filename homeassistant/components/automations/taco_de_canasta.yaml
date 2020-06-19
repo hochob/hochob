@@ -1,0 +1,6 @@
+alias: "Cafe"
+trigger:
+  platform: event
+  event_type: rhasspy_Cafe
+action:
+  service: shell_command.canasta

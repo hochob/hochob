@@ -1,3 +1,7 @@
 acorazados:
   sequence:
     service: shell_command.acorazados
+
+canasta:
+  sequence:
+    service: shell_command.canasta
