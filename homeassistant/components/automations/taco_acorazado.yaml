@@ -1,0 +1,6 @@
+alias: "Introduction"
+trigger:
+  platform: event
+  event_type: rhasspy_Presentacion
+action:
+  service: shell_command.acorazados

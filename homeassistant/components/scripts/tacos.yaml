@@ -1,0 +1,3 @@
+acorazados:
+  sequence:
+    service: shell_command.acorazados
