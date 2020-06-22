@@ -1,0 +1,6 @@
+alias: "Uso de la Inteligencia Artificial"
+trigger:
+  platform: event
+  event_type: rhasspy_IAUso
+action:
+  service: shell_command.campechano
