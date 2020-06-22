@@ -2,6 +2,10 @@ acorazados:
   sequence:
     service: shell_command.acorazados
 
+arrachera:
+  sequence:
+    service: shell_command.arrachera
+
 canasta:
   sequence:
     service: shell_command.canasta
@@ -9,3 +13,4 @@ canasta:
 cabeza:
   sequence:
     service: shell_command.cabeza
+

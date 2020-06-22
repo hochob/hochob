@@ -1,0 +1,6 @@
+alias: "Microprocesador"
+trigger:
+  platform: event
+  event_type: rhasspy_Microprocesador
+action:
+  service: shell_command.arrachera
