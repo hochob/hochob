@@ -1,2 +1,3 @@
 acorazados: /applications/tacos/acorazados.sh
 canasta: /applications/tacos/canasta.sh
+cabeza: /applications/tacos/cabeza.sh

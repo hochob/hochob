@@ -1,0 +1,6 @@
+alias: "Chiste"
+trigger:
+  platform: event
+  event_type: rhasspy_Chiste
+action:
+  service: shell_command.cabeza

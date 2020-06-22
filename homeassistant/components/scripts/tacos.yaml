@@ -5,3 +5,7 @@ acorazados:
 canasta:
   sequence:
     service: shell_command.canasta
+
+cabeza:
+  sequence:
+    service: shell_command.cabeza
