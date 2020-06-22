@@ -4,3 +4,4 @@ canasta: /applications/tacos/canasta.sh
 cabeza: /applications/tacos/cabeza.sh
 campechano: /applications/tacos/campechano.sh
 cecina: /applications/tacos/cecina.sh
+pescado: /applications/tacos/pescado.sh

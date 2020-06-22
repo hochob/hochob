@@ -1,0 +1,6 @@
+alias: "Que se hace en GDC"
+trigger:
+  platform: event
+  event_type: rhasspy_GDC
+action:
+  service: shell_command.pescado
