@@ -14,3 +14,7 @@ cabeza:
   sequence:
     service: shell_command.cabeza
 
+cecina:
+  sequence:
+    service: shell_command.cecina
+

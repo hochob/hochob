@@ -1,0 +1,6 @@
+alias: "Inteligencia Artificial"
+trigger:
+  platform: event
+  event_type: rhasspy_IA
+action:
+  service: shell_command.cecina
