@@ -5,3 +5,4 @@ cabeza: /applications/tacos/cabeza.sh
 campechano: /applications/tacos/campechano.sh
 cecina: /applications/tacos/cecina.sh
 pescado: /applications/tacos/pescado.sh
+suadero: /applications/tacos/suadero.sh

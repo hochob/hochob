@@ -1,0 +1,6 @@
+alias: "Despedida"
+trigger:
+  platform: event
+  event_type: rhasspy_Despedida
+action:
+  service: shell_command.suadero

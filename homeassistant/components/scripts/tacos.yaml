@@ -25,3 +25,7 @@ cecina:
 pescado:
   sequence:
     service: shell_command.pescado
+
+suadero:
+  sequence:
+    service: shell_command.suadero
