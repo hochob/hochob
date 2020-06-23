@@ -22,6 +22,10 @@ cecina:
   sequence:
     service: shell_command.cecina
 
+cochinita:
+  sequence:
+    service: shell_command.cochinita
+
 pescado:
   sequence:
     service: shell_command.pescado

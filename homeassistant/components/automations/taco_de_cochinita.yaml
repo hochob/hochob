@@ -1,0 +1,6 @@
+alias: "Creador"
+trigger:
+  platform: event
+  event_type: rhasspy_Creador
+action:
+  service: shell_command.cochinita
