@@ -1,0 +1,18 @@
+HeyAmikoo:
+  icon: mdi:account-tie-voice
+  name: Voice 
+  entities:
+    - group.amikoo_voice
+
+amikoo_voice:
+  name: Voice Capabilities
+  entities:
+    - script.acorazados
+    - script.arrachera
+    - script.cabeza
+    - script.campechano
+    - script.canasta
+    - script.cecina
+    - script.pescado
+    - script.suadero
+

@@ -144,3 +144,26 @@ cards:
     hold_action:
       action: call-service
       service: shell_command.meccanoid
+
+  - type: entities
+    title: Voice Utilities
+    show_header_toggle: false
+    entities:
+      - type: section
+      - name: "Presentacion"
+        entity: script.acorazados
+      - name: "Que es el microprocesador"
+        entity: script.arrachera
+      - name: "Chistes"
+        entity: script.cabeza
+      - name: "Uso de la IA"
+        entity: script.campechano
+      - name: "Que es la IA"
+        entity: script.cecina
+      - name: "Que se hace en GDC"
+        entity: script.pescado
+      - name: "Despedida"
+        entity: script.suadero
+
+
+      
