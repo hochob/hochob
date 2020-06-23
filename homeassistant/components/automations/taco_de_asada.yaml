@@ -1,0 +1,7 @@
+
+alias: "Tiempo libre"
+trigger:
+  platform: event
+  event_type: rhasspy_TiempoLibre
+action:
+  service: shell_command.asada

@@ -6,6 +6,10 @@ arrachera:
   sequence:
     service: shell_command.arrachera
 
+asada:
+  sequence:
+    service: shell_command.asada
+
 canasta:
   sequence:
     service: shell_command.canasta
