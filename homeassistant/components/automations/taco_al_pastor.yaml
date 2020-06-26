@@ -1,0 +1,6 @@
+alias: "Explicacion Centro de Visitantes"
+trigger:
+  platform: event
+  event_type: rhasspy_CentroDeVisitantes
+action:
+  service: shell_command.pastor

@@ -30,6 +30,10 @@ cochinita:
   sequence:
     service: shell_command.cochinita
 
+pastor:
+  sequence:
+    service: shell_command.pastor
+
 pescado:
   sequence:
     service: shell_command.pescado
