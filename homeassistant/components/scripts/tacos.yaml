@@ -2,6 +2,10 @@ acorazados:
   sequence:
     service: shell_command.acorazados
 
+arabe:
+  sequence:
+    service: shell_command.arabe
+
 arrachera:
   sequence:
     service: shell_command.arrachera

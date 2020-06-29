@@ -1,0 +1,6 @@
+alias: "Piano Cosmico"
+trigger:
+  platform: event
+  event_type: rhasspy_PianoCosmico
+action:
+  service: shell_command.arabe
