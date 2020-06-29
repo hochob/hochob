@@ -1,0 +1,7 @@
+
+alias: "Muones"
+trigger:
+  platform: event
+  event_type: rhasspy_Muon
+action:
+  service: shell_command.barbacoa

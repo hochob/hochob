@@ -2,6 +2,7 @@ acorazados: /applications/tacos/acorazados.sh
 arabe: /applications/tacos/arabe.sh
 arrachera: /applications/tacos/arrachera.sh
 asada: /applications/tacos/asada.sh
+barbacoa: /applications/tacos/barbacoa.sh
 canasta: /applications/tacos/canasta.sh
 cabeza: /applications/tacos/cabeza.sh
 campechano: /applications/tacos/campechano.sh
