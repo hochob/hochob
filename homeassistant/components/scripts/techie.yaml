@@ -1,0 +1,3 @@
+order66:
+  sequence:
+    service: shell_command.order66
