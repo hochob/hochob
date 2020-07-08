@@ -10,23 +10,41 @@ cards:
     entities:
       - type: section
         label: First Hall
-      - script.alfenique
-      - script.ate
-      - script.borrachitos
-      - script.camotes
-      - script.charamusca
-      - script.chupirul
-      - script.cocada
-      - script.glorias
+      - name: "Bienvenida Amikoo"
+        entity: script.alegria
+      - name: "Bienvenida Pantalla"
+        entity: script.alfenique
+      - name: "Invitacion al tour"
+        entity: script.ate
+      - name: "Intro Sala Antes del Inicio"
+        entity: script.borrachitos
+      - name: "Historia del Cero"
+        entity: script.camotes
+      - name: "Historia Intel"
+        entity: script.charamusca
+      - name: "Historia GDC"
+        entity: script.chupirul
+      - name: "Historia Procesador"
+        entity: script.cocada
+      - name: "Fin Sala Antes del Inicio"
+        entity: script.glorias
       - type: section
         label: Second Hall
-      - script.jamoncillo
-      - script.macarrones
-      - script.mazapan
-      - script.merengue
-      - script.muegano
+      - name: "Intro Sala Conociendo el Chip"
+        entity: script.jamoncillo
+      - name: "Arena al Silicio"
+        entity: script.macarrones
+      - name: "Que se hace en GDC"
+        entity: script.mazapan
+      - name: "FABs"
+        entity: script.merengue
+      - name: "Fin Sala Conociendo el Chip"
+        entity: script.muegano
       - type: section
         label: Third Hall
-      - script.palanqueta
-      - script.tortadesantaclara
-      - script.olladetamarindo
+      - name: "Intro La Ciencia es Divertida"
+        entity: script.palanqueta
+      - name: "Piano Cosmico"
+        entity: script.tortadesantaclara
+      - name: "Cierre Museo"
+        entity: script.olladetamarindo
