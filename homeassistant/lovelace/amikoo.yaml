@@ -152,14 +152,24 @@ cards:
       - type: section
       - name: "Presentacion"
         entity: script.acorazados
+      - name: "Piano Cosmico"
+        entity: script.arabe
       - name: "Que es el microprocesador"
         entity: script.arrachera
+      - name: "Tiempo Libre"
+        entity: script.asada
+      - name: "Muones"
+        entity: script.barbacoa
       - name: "Chistes"
         entity: script.cabeza
       - name: "Uso de la IA"
         entity: script.campechano
       - name: "Que es la IA"
         entity: script.cecina
+      - name: "Creador"
+        entity: script.cochinita
+      - name: "Centro de Visitantes"
+        entity: script.pastor
       - name: "Que se hace en GDC"
         entity: script.pescado
       - name: "Despedida"

@@ -8,11 +8,17 @@ amikoo_voice:
   name: Voice Capabilities
   entities:
     - script.acorazados
+    - script.arabe
     - script.arrachera
+    - script.asada
+    - script.barbacoa
     - script.cabeza
     - script.campechano
     - script.canasta
     - script.cecina
+    - script.cochinita
+    - script.pastor
     - script.pescado
     - script.suadero
+
 
