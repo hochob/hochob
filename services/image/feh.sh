@@ -17,7 +17,10 @@ LOCAL_FILES="$1"
 # =============================================================================
 # Functions
 # =============================================================================
-
+#feh outfile.jpeg &     # run process in background
+#pid=$!                 # obtain PID of last backgrounded process
+#sleep 10               
+#kill $pid   
 # None
 
 # =============================================================================
@@ -26,12 +29,14 @@ LOCAL_FILES="$1"
 
 if [ $# -eq 1 ]
 then
-    killall -9 $FEH_BINARY
+    killall $FEH_BINARY
     if [ -d "${LOCAL_FILES}" ]; then
-        $FEH_BINARY $FEH_FULLSCREEN_ARGUMENT $FEH_SLIDESHOW_ARGUMENT $LOCAL_FILES
+        $FEH_BINARY $FEH_FULLSCREEN_ARGUMENT $FEH_SLIDESHOW_ARGUMENT $LOCAL_FILES &
     elif [ -f "${LOCAL_FILES}" ]; then
-        $FEH_BINARY $FEH_FULLSCREEN_ARGUMENT $LOCAL_FILES
+        $FEH_BINARY $FEH_FULLSCREEN_ARGUMENT $LOCAL_FILES &        
     fi
+    sleep 30
+    killall $FEH_BINARY
     
 else
     echo "Invalid number of arguments, see Documentation"
