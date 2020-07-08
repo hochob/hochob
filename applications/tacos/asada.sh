@@ -22,6 +22,8 @@ LOCAL_PHRASE="En mi tiempo libre me gusta hacer Yoga, ¿Sabían que aquí dan cl
 # Main
 # =============================================================================
 
+/services/image/feh.sh "/config/www/media/HeyAmikoo/Ejercicio" &
+
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
 # End of File
