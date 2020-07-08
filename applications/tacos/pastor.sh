@@ -23,6 +23,8 @@ LOCAL_PHRASE="Aquí conocerán el pasado, el presente y el futuro de Intel. \
 # Main
 # =============================================================================
 
+/services/video/video.sh "off" "/config/www/media/VisitorsCenter/Video/VisitorsCenter.mp4" &
+
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
 # End of File
