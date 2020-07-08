@@ -13,8 +13,8 @@ export ALFENIQUE_DIRECTORY=$(dirname "$MECCANOID_PATH")
 LOCAL_PHRASE="Bienvenidos a mi casa, su casa. \
     Es un gusto conocerlas y conocerlos. Soy Lupe, \
     Soy guía en el emocionante Centro de Visitantes de Intel. \
-    Estoy listo para mostrarles lo interesante que es el mundo\
-    de las Ciencias, la Tecnología, las Ingenierías y las Matemáticas.\
+    Estoy lista para mostrarles lo interesante que es el mundo \
+    de las Ciencias, la Tecnología, las Ingenierías y las Matemáticas. \
     "
 
 # =============================================================================
@@ -26,6 +26,8 @@ LOCAL_PHRASE="Bienvenidos a mi casa, su casa. \
 # =============================================================================
 # Main
 # =============================================================================
+
+/services/image/feh.sh "/config/www/media/HeyAmikoo/Bienvenidos.png" &
 
 /services/voice/voice.sh "on" "espeak" "spanish" "$LOCAL_PHRASE"
 
