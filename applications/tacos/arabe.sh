@@ -21,6 +21,7 @@ LOCAL_PHRASE="El piano cósmico es un instrumento muy especial. Lo tocan partíc
 # =============================================================================
 # Main
 # =============================================================================
+/services/image/feh.sh "/config/www/media/HeyAmikoo/PianoCosmico" &
 
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
