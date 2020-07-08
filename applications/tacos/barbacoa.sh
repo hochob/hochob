@@ -22,6 +22,7 @@ LOCAL_PHRASE=" Los muones son partículas elementales que se encuentran en los r
 # =============================================================================
 # Main
 # =============================================================================
+/services/video/video.sh "off" "/config/www/media/HeyAmikoo/Muones.mp4" &
 
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
