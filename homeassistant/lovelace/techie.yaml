@@ -15,3 +15,9 @@ cards:
     tap_action:
       action: call-service
       service: shell_command.google
+
+  - type: picture
+    image: /local/media/Amikoo/Image/AmikooCloseTake.jpg
+    tap_action:
+      action: call-service
+      service: shell_command.order66
