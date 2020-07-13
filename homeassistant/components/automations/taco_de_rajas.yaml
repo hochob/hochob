@@ -1,0 +1,6 @@
+alias: "Certificacion LEED"
+trigger:
+  platform: event
+  event_type: rhasspy_Sustentabilidad
+action:
+  service: shell_command.rajas

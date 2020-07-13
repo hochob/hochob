@@ -46,6 +46,10 @@ pescado:
   sequence:
     service: shell_command.pescado
 
+rajas:
+  sequence:
+    service: shell_command.rajas
+
 suadero:
   sequence:
     service: shell_command.suadero

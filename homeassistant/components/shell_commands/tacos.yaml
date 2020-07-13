@@ -10,4 +10,5 @@ cecina: /applications/tacos/cecina.sh
 cochinita: /applications/tacos/cochinita.sh
 pastor: /applications/tacos/pastor.sh
 pescado: /applications/tacos/pescado.sh
+rajas: /applications/tacos/rajas.sh
 suadero: /applications/tacos/suadero.sh

@@ -172,6 +172,8 @@ cards:
         entity: script.pastor
       - name: "Que se hace en GDC"
         entity: script.pescado
+      - name: "Sustentabilidad/LEED Gold"
+        entity: script.rajas
       - name: "Despedida"
         entity: script.suadero
 
