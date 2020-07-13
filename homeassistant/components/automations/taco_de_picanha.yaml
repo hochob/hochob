@@ -1,0 +1,6 @@
+alias: "Que hace Intel"
+trigger:
+  platform: event
+  event_type: rhasspy_Intel
+action:
+  service: shell_command.picanha
