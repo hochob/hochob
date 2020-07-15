@@ -22,6 +22,8 @@ LOCAL_PHRASE="Soy producto del esfuerzo de bastantes ingenieras e ingenieros que
 # Main
 # =============================================================================
 
+/services/image/feh.sh "/config/www/media/HeyAmikoo/Image/Personas" &
+
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
 # End of File
