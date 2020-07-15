@@ -22,7 +22,7 @@ LOCAL_PHRASE="Es el cerebro que controla una computadora, por ejemplo la que me 
 # =============================================================================
 # Main
 # =============================================================================
-/services/image/feh.sh "/config/www/media/HeyAmikoo/Cerebro.png" &
+/services/image/feh.sh "/config/www/media/HeyAmikoo/Image/Cerebro.png" &
 
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 

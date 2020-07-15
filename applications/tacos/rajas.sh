@@ -25,7 +25,7 @@ LOCAL_PHRASE="Estos edificios cuentan con una certificación LEEED Gold.
 # Main
 # =============================================================================
 
-/services/image/feh.sh "/config/www/media/HeyAmikoo/Sustentabilidad" &
+/services/image/feh.sh "/config/www/media/HeyAmikoo/Image/Sustentabilidad" &
 
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
