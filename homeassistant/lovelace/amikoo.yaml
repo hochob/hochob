@@ -164,6 +164,8 @@ cards:
         entity: script.cabeza
       - name: "Uso de la IA"
         entity: script.campechano
+      - name: "Cafe"
+        entity: script.canasta
       - name: "Que es la IA"
         entity: script.cecina
       - name: "Creador"
