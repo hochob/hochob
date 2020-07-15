@@ -21,6 +21,8 @@ LOCAL_PHRASE="'Brrrrrrrr... ¿Acaso parezco una cafetera?\
 # Main
 # =============================================================================
 
+/services/image/feh.sh "/config/www/media/HeyAmikoo/Image/Cafe.jpg" &
+
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
 # End of File
