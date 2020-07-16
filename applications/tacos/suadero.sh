@@ -31,6 +31,8 @@ choosePhrase()
 
 choosePhrase
 
+/services/image/feh.sh "/config/www/media/HeyAmikoo/Image/Gracias.png" &
+
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
 # End of File
