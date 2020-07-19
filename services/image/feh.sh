@@ -8,7 +8,7 @@
 
 export FEH_PID=$$
 export FEH_BINARY=feh
-export FEH_FULLSCREEN_ARGUMENT="-F -Y"
+export FEH_FULLSCREEN_ARGUMENT="-F -Y -Z"
 export FEH_SLIDESHOW_ARGUMENT="-z -D 5"
 
 
