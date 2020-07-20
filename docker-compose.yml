@@ -36,7 +36,7 @@ services:
     build:
       context: ./config/homeassistant/
       dockerfile: Dockerfile.homeassistant
-    image: homeassistant/home-assistant
+    image: homeassistant/home-assistant:stable
     container_name: hochob-homeassistant
     privileged: true
     restart: on-failure
@@ -53,7 +53,6 @@ services:
       - QT_X11_NO_MITSHM=1
     cap_add:
       - ALL
-    pid: "host"
     ipc: "host"
     network_mode: host
     ports:
