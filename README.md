@@ -1,5 +1,11 @@
 # Hochob
 
+<p>
+    <img src="https://img.shields.io/badge/ubuntu-16.04-orange" />
+    <img src="https://img.shields.io/badge/Home%20Assistant%20-0.113-blue" />
+</p>
+
+
 ![alt text](https://github.com/hochob/hochob/blob/master/assets/header.png?raw=true)
 
 > Hochob is a Mayan word meaning “place of the corn stalks”
