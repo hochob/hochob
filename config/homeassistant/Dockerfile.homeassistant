@@ -12,6 +12,7 @@ RUN apk update && \
     alsa-utils-doc \
     eog \
     feh \
+    libcanberra-gtk3 \
     mesa-dri-intel \
     mesa-gl \
     mosquitto-clients \
