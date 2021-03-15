@@ -11,6 +11,7 @@ RUN apk update && \
     alsaconf \
     alsa-utils-doc \
     eog \
+    espeak \
     feh \
     libcanberra-gtk3 \
     mesa-dri-intel \
