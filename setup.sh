@@ -14,3 +14,7 @@ git clone https://github.com/hochob/Navidad.git
 git clone https://github.com/hochob/Papirolas.git
 git clone https://github.com/hochob/Unidos.git
 git clone https://github.com/hochob/VisitorsCenter.git
+
+cd ../services/streaming
+git clone https://github.com/dohliam/stream2chromecast.git ./stream2chromecast
+
