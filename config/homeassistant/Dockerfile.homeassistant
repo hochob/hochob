@@ -1,4 +1,4 @@
-FROM  homeassistant/home-assistant
+FROM  homeassistant/home-assistant:2021.5.0
 
 MAINTAINER Abraham Arce "xe1gyq@gmail.com"
 

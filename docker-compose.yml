@@ -36,7 +36,7 @@ services:
     build:
       context: ./config/homeassistant/
       dockerfile: Dockerfile.homeassistant
-    image: homeassistant/home-assistant:stable
+    image: homeassistant/home-assistant:2021.5.0
     container_name: hochob-homeassistant
     privileged: true
     restart: on-failure
@@ -62,8 +62,8 @@ services:
       - /dev
       - /dev/snd
       - /proc
-      - /dev/dri/card1:/dev/dri/card0
-      - /dev/dri/renderD129:/dev/dri/renderD128
+#      - /dev/dri/card1:/dev/dri/card0
+#      - /dev/dri/renderD129:/dev/dri/renderD128
     volumes:
       - ./homeassistant:/config
       - ./services:/services
