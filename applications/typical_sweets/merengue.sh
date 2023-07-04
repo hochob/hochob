@@ -24,6 +24,6 @@ LOCAL_PHRASE=" Las FAB, son los lugares donde se fabrican los microprocesadores,
 # Main
 # =============================================================================
 
-/services/voice/voice.sh "Lobby TV" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Beginning speaker" "espeak" "spanish" "$LOCAL_PHRASE"
 
 # End of File

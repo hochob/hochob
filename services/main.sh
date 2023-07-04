@@ -13,8 +13,8 @@ export AMIKOO=amikoo
 
 # Services Amikoo Voice
 
-export AMIKOO_ADDRESS=192.168.15.106
-export AMIKOO_TTS_API_ADDRESS="http://192.168.15.106:12101/api/text-to-speech"
+export AMIKOO_ADDRESS=192.168.1.124
+export AMIKOO_TTS_API_ADDRESS="http://192.168.1.124:12101/api/text-to-speech"
 
 # Services Amikoo Nervous System Voice
 

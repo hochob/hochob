@@ -12,6 +12,7 @@ LOCAL_PHRASE="Es llevar un pedazo de la inteligencia de las personas a las compu
              Y en algunos casos es más facil de lo que creen' \
             "
 
+
 # =============================================================================
 # Functions
 # =============================================================================

@@ -1,0 +1,7 @@
+# Lupe introduce herself
+alias: "Recorrido al Centro de Visitantes"
+trigger:
+  platform: event
+  event_type: rhasspy_Tour
+action:
+  service: shell_command.ate

@@ -12,7 +12,6 @@ LOCAL_PHRASE[0]="Que la fuerza los acompañe"
 LOCAL_PHRASE[1]="Hasta luego cocodrilo" 
 LOCAL_PHRASE[2]="Hasta la vista, beibi"
 
-
 # =============================================================================
 # Functions
 # =============================================================================

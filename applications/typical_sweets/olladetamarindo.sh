@@ -25,6 +25,6 @@ LOCAL_PHRASE=" Espero que se hayan divertido, nuestro recorrido casi ha terminad
 # Main
 # =============================================================================
 
-/services/voice/voice.sh "Lobby TV" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Beginning speaker" "espeak" "spanish" "$LOCAL_PHRASE"
 
 # End of File

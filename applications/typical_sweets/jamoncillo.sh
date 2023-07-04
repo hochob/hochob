@@ -24,6 +24,6 @@ LOCAL_PHRASE=" Esta siguiente sección, como lo podrán ver, es bastante diferen
 # Main
 # =============================================================================
 
-/services/voice/voice.sh "Lobby TV" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Beginning speaker" "espeak" "spanish" "$LOCAL_PHRASE"
 
 # End of File

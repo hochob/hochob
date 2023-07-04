@@ -25,6 +25,7 @@ LOCAL_PHRASE="Ejecutando la orden 66
 
 /services/voice/voice.sh "amikoo" "default" "spanish" "$LOCAL_PHRASE"
 
-/services/voice/voice.sh "Lobby TV" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Triki" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Juum" "espeak" "spanish" "$LOCAL_PHRASE"
 
 # End of File

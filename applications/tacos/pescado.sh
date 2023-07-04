@@ -13,6 +13,7 @@ LOCAL_PHRASE="En Guadalajara los ingenieros se encargan de revisar que los \
             Aquí no es una fábrica, sino un centro de validación'
             "
 
+
 # =============================================================================
 # Functions
 # =============================================================================

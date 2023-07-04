@@ -12,6 +12,7 @@ RUN apk update && \
     alsa-utils-doc \
     curl \
     eog \
+    espeak \
     feh \
     mesa-dri-intel \
     mesa-gl \

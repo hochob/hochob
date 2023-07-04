@@ -15,6 +15,9 @@ LOCAL_PHRASE="Estos edificios cuentan con una certificación LEEED Gold.
             público y las bicicletas. Tambien se están implementando páneles solares. \
             "
 
+
+
+
 # =============================================================================
 # Functions
 # =============================================================================

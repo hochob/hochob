@@ -12,7 +12,6 @@ LOCAL_PHRASE="Aquí conocerán el pasado, el presente y el futuro de Intel. \
             Al final encontrarán una sección donde podrán jugar y maravillarse \
             con la ciencia. Tambien encontrarán un piano cósmico. \
             "
-
 # =============================================================================
 # Functions
 # =============================================================================

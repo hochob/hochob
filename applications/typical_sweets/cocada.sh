@@ -23,6 +23,6 @@ LOCAL_PHRASE=" Y les mostraré un poco de historia de los microprocesadores \
 # Main
 # =============================================================================
 
-/services/voice/voice.sh "Lobby TV" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Beginning speaker" "espeak" "spanish" "$LOCAL_PHRASE"
 
 # End of File

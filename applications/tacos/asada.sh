@@ -12,6 +12,7 @@ LOCAL_PHRASE="En mi tiempo libre me gusta hacer Yoga, ¿Sabían que aquí dan cl
     Tambien me gusta correr, aunque mas bien ruedo
     "
 
+
 # =============================================================================
 # Functions
 # =============================================================================

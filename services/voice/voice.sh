@@ -32,7 +32,7 @@ if [ $# -eq 4 ]; then
         "on")
             #Plays voice at local device
             if [ "$LOCAL_ENGINE" = "espeak" ]; then
-              espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
+                espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
             fi
             aplay $SPEECH_FILE
             ;;
@@ -45,7 +45,7 @@ if [ $# -eq 4 ]; then
             if [ "$LOCAL_ENGINE" = "espeak" ]; then
               espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
             fi
-            $CHROMECAST_STREAM "$LOCAL_PLAY" "1.0" "$SPEECH_FILE"
+            $CHROMECAST_STREAM "$LOCAL_PLAY" "0.3" "$SPEECH_FILE"
             ;;
     esac
 

@@ -26,6 +26,6 @@ LOCAL_PHRASE=" ¿Escuchan ese sonido? Es un piano, pero uno muy especial. Es un 
 # Main
 # =============================================================================
 
-/services/voice/voice.sh "Lobby TV" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Beginning speaker" "espeak" "spanish" "$LOCAL_PHRASE"
 
 # End of File

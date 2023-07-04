@@ -23,6 +23,6 @@ LOCAL_PHRASE=" Es todo lo que tenemos que contarles de la historia \
 # Main
 # =============================================================================
 
-/services/voice/voice.sh "Lobby TV" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Beginning speaker" "espeak" "spanish" "$LOCAL_PHRASE"
 
 # End of File

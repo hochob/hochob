@@ -24,6 +24,6 @@ LOCAL_PHRASE=" Uno de los elementos clave para fabricar los microprocesadores es
 # Main
 # =============================================================================
 
-/services/voice/voice.sh "Lobby TV" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Beginning speaker" "espeak" "spanish" "$LOCAL_PHRASE"
 
 # End of File

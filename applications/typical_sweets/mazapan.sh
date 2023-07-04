@@ -24,6 +24,6 @@ LOCAL_PHRASE=" Les contaré un secreto, aqui en Guadalajara no hacemos procesado
 # Main
 # =============================================================================
 
-/services/voice/voice.sh "Lobby TV" "espeak" "spanish" "$LOCAL_PHRASE"
+/services/voice/voice.sh "Beginning speaker" "espeak" "spanish" "$LOCAL_PHRASE"
 
 # End of File
