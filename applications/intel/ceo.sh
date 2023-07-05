@@ -39,7 +39,7 @@ sleep 1
 sleep 1
 
 /services/amikoo/amikoomultimedia.sh 'lupe' 'Intel' 'Image' 'BobSwanIntel.jpg'
-/services/image/eog.sh '/config/www/media/Intel/Image/BobSwanIntel.jpg' &
+/services/image/feh.sh '/config/www/media/Intel/Image/BobSwanIntel.jpg' &
 
 sleep 1
 

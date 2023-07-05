@@ -20,7 +20,7 @@
 
 /services/voice/voice.sh 'on' 'espeak' 'spanish' 'Puedo desplegar imagenes!'
 sleep 1
-/services/image/eog.sh '/config/www/media/DiaDeMuertos/Image/Calaverita.jpg' &
+/services/image/feh.sh '/config/www/media/DiaDeMuertos/Image/Calaverita.jpg' &
 sleep 2
 /services/voice/voice.sh 'on' 'espeak' 'spanish' 'Puedo reproducir audio en formato mp3!'
 sleep 1

@@ -25,7 +25,7 @@ export BAJACALIFORNIASUR_DIRECTORY=$(dirname "$BAJACALIFORNIASUR_PATH")
 
 LogPid.sh $BAJACALIFORNIASUR_PID $BAJACALIFORNIASUR_NAME
 
-/services/image/eog.sh '/config/www/media/Amikoo/Image/LupeBienvenidaIntel.png' &
+/services/image/feh.sh '/config/www/media/Amikoo/Image/LupeBienvenidaIntel.png' &
 sleep 1
 
 /services/voice/voice.sh 'on' 'espeak' 'spanish' 'Hola a todos!'
