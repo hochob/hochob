@@ -48,8 +48,8 @@ services:
       - TZ=America/Mexico_City
       - DISPLAY=:0
       - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
-      - XAUTHORITY=${XAUTH}
-      - XAUTH=${XAUTH}
+      - XAUTHORITY=/root/.Xauthority
+      - XAUTH=/root/.Xauthority
       - QT_X11_NO_MITSHM=1
     cap_add:
       - ALL
@@ -62,8 +62,6 @@ services:
       - /dev
       - /dev/snd
       - /proc
-      - /dev/dri/card1:/dev/dri/card0
-      - /dev/dri/renderD129:/dev/dri/renderD128
     volumes:
       - ./homeassistant:/config
       - ./services:/services

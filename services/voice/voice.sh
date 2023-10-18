@@ -33,7 +33,7 @@ if [ $# -eq 4 ]; then
     fi
 
     if [ "$LOCAL_PLAY" = "on" ]; then
-        aplay $SPEECH_FILE
+        aplay -D pulse $SPEECH_FILE
     #Stream to chromecast passing the device name in the local_play variable
     else
         $CHROMECAST_STREAM "$LOCAL_PLAY" "1.0" "$SPEECH_FILE"

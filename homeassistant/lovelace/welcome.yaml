@@ -1,0 +1,16 @@
+title: Welcome
+icon: mdi:heart
+path: welcome
+id: Welcome
+cards:
+
+  - type: entities
+    title: Welcome to Intel
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Voice
+      - script.iamlupe
+      - script.heispat
+      - script.heisleo
+      - script.goleo
