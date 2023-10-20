@@ -20,8 +20,9 @@ export GOLEO_DIRECTORY=$(dirname "$GOLEO_PATH")
 
 . /services/main.sh
 
-/services/amikoo/amikoovoice.sh 'lupe' spanish \
-               'Adelante Leo'
+/services/amikoo/leomovement.sh "leo" 'start'
+/services/amikoo/leomovement.sh "leo" 'second'
+/services/amikoo/leomovement.sh "leo" 'final'
 
 
 # End of File

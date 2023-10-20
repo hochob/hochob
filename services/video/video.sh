@@ -8,7 +8,8 @@ set -x
 
 export MPV_PID=$$
 export MPV_BINARY=mpv
-export MPV_ARGUMENTS="--audio-device=pulse/alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo --fs --keep-open=yes "
+#export MPV_ARGUMENTS="--audio-device=pulse/alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo --fs --keep-open=yes "
+export MPV_ARGUMENTS="--fs --keep-open=yes "
 export MPV_LOOP="--loop"
 export KILL_MPV="kill $(ps aux | grep 'mpv')"
 
