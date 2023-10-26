@@ -20,7 +20,7 @@ export IAMLUPE_DIRECTORY=$(dirname "$IAMLUPE_PATH")
 
 . /services/main.sh
 
-#/services/image/feh.sh "/config/www/media/HeyAmikoo/Image/Bienvenidos.png" &
+/services/image/feh.sh "/config/www/media/HeyAmikoo/Image/Bienvenidos.png" &
 
 /services/amikoo/amikoomovement.sh 'lupe' 'resetall' 'Lupe Legs Stop' && sleep .6
 /services/amikoo/amikoomovement.sh 'lupe' 'headright' 'Lupe Head Right' && sleep .6

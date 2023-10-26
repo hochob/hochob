@@ -8,8 +8,7 @@
 
 export ORDER66_PID=$$
 
-LOCAL_PHRASE="Ejecutando la orden 66
-            "
+LOCAL_PHRASE="Ejecutando la orden 66"
 
 # =============================================================================
 # Functions

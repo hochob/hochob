@@ -4,20 +4,40 @@ path: techie
 id: Techie
 cards:
 
+  - type: entities
+    title: What can I do?
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Press and hold the picture to test multimedia
   - type: picture
     image: /local/media/Amikoo/Image/LupeBienvenidaIntel.png
     hold_action:
       action: call-service
       service: shell_command.spacex
 
-  - type: picture
-    image: /local/media/Amikoo/Image/AmikooOutsideIntelLobby.jpg
-    tap_action:
-      action: call-service
-      service: shell_command.google
+  - type: entities
+    title: Audio Diagnostics
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Press the picture once to test audio devices
 
   - type: picture
     image: /local/media/Amikoo/Image/AmikooCloseTake.jpg
     tap_action:
       action: call-service
       service: shell_command.order66
+
+  - type: entities
+    title: Movement Diagnostics
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Press the picture once to test Lupe movement
+
+  - type: picture
+    image: /local/media/Amikoo/Image/AmikooOutsideIntelLobby.jpg
+    tap_action:
+      action: call-service
+      service: shell_command.google
