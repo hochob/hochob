@@ -1,16 +1,12 @@
 #!/bin/sh
 
-set -x
-
 # =============================================================================
 # Variables
 # =============================================================================
 
-export MPV_PID=$$
-export MPV_BINARY=mpv
-export MPV_ARGUMENTS=--audio-device=pulse
-
-LOCAL_FILE="$1"
+export GOLEOCMD1_PID=$$
+export GOLEOCMD1_PATH=$(readlink -f "$0")
+export GOLEOCMD1_DIRECTORY=$(dirname "$GOLEOCMD1_PATH")
 
 # =============================================================================
 # Functions
@@ -22,12 +18,9 @@ LOCAL_FILE="$1"
 # Main
 # =============================================================================
 
-if [ $# -eq 1 ]
-then
-    $MPV_BINARY $MPV_ARGUMENTS $LOCAL_FILE
-else
-    echo "Invalid number of arguments, see Documentation"
-    exit 1
-fi
+. /services/main.sh
+
+/services/amikoo/leomovement.sh "leo" 'cmd1'
+
 
 # End of File

@@ -3,6 +3,7 @@ title: Hochob
 views:
 
   - !include lovelace/home.yaml
+  - !include lovelace/welcome.yaml
   - !include lovelace/tour.yaml
   - !include lovelace/techie.yaml
   - !include lovelace/amikoo.yaml

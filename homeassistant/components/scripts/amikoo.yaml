@@ -77,3 +77,27 @@ meccanoid:
 sphero:
   sequence:
     service: shell_command.sphero
+
+iamlupe:
+  sequence:
+    service: shell_command.iamlupe
+
+heispat:
+  sequence:
+    service: shell_command.heispat
+
+heisleo:
+  sequence:
+    service: shell_command.heisleo
+
+goleocmd0:
+  sequence:
+    service: shell_command.goleocmd0
+
+goleocmd1:
+  sequence:
+    service: shell_command.goleocmd1
+
+goleocmd2:
+  sequence:
+    service: shell_command.goleocmd2

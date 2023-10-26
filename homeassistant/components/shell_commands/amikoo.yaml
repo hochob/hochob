@@ -25,3 +25,9 @@ coji: /applications/amikoo/coji.sh
 jibo: /applications/amikoo/jibo.sh
 meccanoid: /applications/amikoo/meccanoid.sh
 sphero: /applications/amikoo/sphero.sh
+iamlupe: /applications/amikoo/iamlupe.sh
+heispat: /applications/amikoo/heispat.sh
+heisleo: /applications/amikoo/heisleo.sh
+goleocmd0: /applications/amikoo/goleocmd0.sh
+goleocmd1: /applications/amikoo/goleocmd1.sh
+goleocmd2: /applications/amikoo/goleocmd2.sh

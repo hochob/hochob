@@ -27,7 +27,7 @@ LOCAL_PHRASE="Bienvenidos a mi casa, su casa. \
 # Main
 # =============================================================================
 
-/services/image/feh.sh "/config/www/media/HeyAmikoo/Bienvenidos.png" &
+/services/image/feh.sh "/config/media/HeyAmikoo/Bienvenidos.png" &
 
 /services/voice/voice.sh "on" "espeak" "spanish" "$LOCAL_PHRASE"
 

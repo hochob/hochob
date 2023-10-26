@@ -16,6 +16,8 @@ LOCAL_ENGINE="$2"
 LOCAL_LANGUAGE="$3"
 LOCAL_TEXT="$4"
 
+LOCAL_APLAY_ARGUMENTS="-D pulse"
+
 # =============================================================================
 # Functions
 # =============================================================================
@@ -27,14 +29,14 @@ LOCAL_TEXT="$4"
 # =============================================================================
 
 if [ $# -eq 4 ]; then
-    
+
     case "$LOCAL_PLAY" in
         "on")
             #Plays voice at local device
             if [ "$LOCAL_ENGINE" = "espeak" ]; then
                 espeak.sh $LOCAL_LANGUAGE "${LOCAL_TEXT}"
             fi
-            aplay $SPEECH_FILE
+            aplay $LOCAL_APLAY_ARGUMENTS $SPEECH_FILE
             ;;
         "amikoo")
             #Send HTTP POST to TTS URL

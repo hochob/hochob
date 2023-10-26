@@ -1,16 +1,15 @@
 #!/bin/sh
 
-set -x
-
 # =============================================================================
 # Variables
 # =============================================================================
 
-export MPV_PID=$$
-export MPV_BINARY=mpv
-export MPV_ARGUMENTS=--audio-device=pulse
+. /services/main.sh
 
-LOCAL_FILE="$1"
+export LEOMOVEMENT_PID=$$
+
+LOCAL_COMMAND=$1
+LOCAL_MESSAGE=""
 
 # =============================================================================
 # Functions
@@ -22,12 +21,16 @@ LOCAL_FILE="$1"
 # Main
 # =============================================================================
 
-if [ $# -eq 1 ]
-then
-    $MPV_BINARY $MPV_ARGUMENTS $LOCAL_FILE
-else
-    echo "Invalid number of arguments, see Documentation"
-    exit 1
-fi
+i=0
+for var in "$@"
+do
+    if [ "$i" -ge 1 ]; then
+      LOCAL_MESSAGE=$LOCAL_MESSAGE"$var"
+      echo $LOCAL_MESSAGE
+    fi
+    i=`expr $i + 1`
+done
 
-# End of File
+LOCAL_TOPIC=$LOCAL_COMMAND
+
+mosquitto_pub.sh $LOCAL_TOPIC $LOCAL_MESSAGE

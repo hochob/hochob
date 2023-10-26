@@ -13,8 +13,8 @@ export AMIKOO=amikoo
 
 # Services Amikoo Voice
 
-export AMIKOO_ADDRESS=192.168.1.124
-export AMIKOO_TTS_API_ADDRESS="http://192.168.1.124:12101/api/text-to-speech"
+export AMIKOO_ADDRESS=192.168.100.184
+export AMIKOO_TTS_API_ADDRESS="http://192.168.100.184:12101/api/text-to-speech"
 
 # Services Amikoo Nervous System Voice
 
@@ -32,7 +32,7 @@ export AMIKOO_MULTIMEDIA_VIDEO=$AMIKOO_MULTIMEDIA/video
 
 # Services Protocol Mosquitto
 
-export MQTT_SERVER_ADDRESS=172.17.0.1
+export MQTT_SERVER_ADDRESS=192.168.100.22
 export MQTT_SERVER_PORT=1883
 
 # Services streaming

@@ -1,0 +1,29 @@
+title: Welcome
+icon: mdi:heart
+path: welcome
+id: Welcome
+cards:
+
+  - type: entities
+    title: Lupe
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Welcome to Intel by Lupe
+      - name: Hi! I am Lupe
+        entity: script.iamlupe
+      - name: Pat! Our CEO
+        entity: script.heispat
+      - name: Please meet Leo!
+        entity: script.heisleo
+
+  - type: entities
+    title: Leo
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Visitor Center Tour by Leo
+      - name: Go Leo and wait
+        entity: script.goleocmd0
+      - name: Now finish the tour
+        entity: script.goleocmd1
